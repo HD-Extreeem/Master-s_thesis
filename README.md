@@ -1,2 +1,2 @@
-# Master-s_thesis
+# Master_thesis
 Vacant parking detection
