@@ -24,6 +24,8 @@ ap.add_argument('-u', '--url', required=True,
                     help='Use URL image')
 args = ap.parse_args()
 
+
+
 classes = None
 
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
@@ -95,6 +97,49 @@ def put_coord(startX,endX,startY,endY):
     with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
+def load_coord():
+    with open('coordinates.json', 'r') as f:
+        data = json.load(f)
+    slot_box =[]
+    for element in data["parking"]:
+        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"]])
+    return slot_box
+
+def calculate_IoU(boxA,boxB):
+    XA= max(boxA[0],boxB[0])
+    XB= min(boxA[1],boxB[1])
+    YA= max(boxA[2],boxB[2])
+    YB= min(boxA[3],boxB[3])
+
+    #calculate the intern area
+    interArea = max(0,XB-XA+1)* max(0,YB-YA+1)
+
+    #calculate the area of both boxes
+    boxAArea = (boxA[1]-boxA[0]+1)*(boxA[3]-boxA[2]+1)
+    boxBArea = (boxB[1]-boxB[0]+1)*(boxB[3]-boxB[2]+1)
+
+    #calculate the intersection-over union area
+    iou= interArea / float(boxAArea+bocBArea-interArea)
+    return iou
+
+def calculate_free_spots(image,vehicleBoxes)
+    free_space=0
+    slot_boxes = load_coord()
+    for slot in slot_boxes:
+        IoU_max = 0
+        for vehicle in vehicleBoxes:
+            IoU = calculate_IoU(slot,vehicle)
+            if IoU_max < IoU:
+               IoU_max=IoU
+        x1,x2,y1,y2 = slot
+        if IoU_max < 0.30:
+           cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),3)
+           free_space += 1
+        if IoU_max > 0.70:
+           cv2.rectangle(image,(x1,y1),(x2,y2),(0,0,255),3)
+    return free_space
+        
+    
 
 
 # |-------------------------------------------|
