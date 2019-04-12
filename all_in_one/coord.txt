@@ -1,3 +1,0 @@
-StartX-Endx: 302.0 - 158.5 ; StartY-EndY: 436.0 - 269.5 
-StartX-Endx: 406.5 - 131.0 ; StartY-EndY: 561.5 - 259.0 
-StartX-Endx: 99.0 - 123.5 ; StartY-EndY: 315.0 - 288.5 
