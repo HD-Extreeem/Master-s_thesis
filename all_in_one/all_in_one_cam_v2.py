@@ -10,11 +10,12 @@ import time
 import os
 import operator
 import caffe_classes_alex
-#from urllib.request import urlopen
+from urllib.request import urlopen
 from copy import copy
 import requests
 from PIL import Image
 import io
+import json
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True,
@@ -57,6 +58,43 @@ def get_cam_img():
         image = cv2.imdecode(image, cv2.IMREAD_COLOR)
     
     return image
+
+def read_put_coord(startX,endX,startY,endY):
+    put = "StartX-Endx: {} - {} ; StartY-EndY: {} - {} \n".format(startX , endX, startY, endY)
+    with open("coord.txt") as f :
+        content = f.read()
+        if(put in content):
+            print("EXISTS ALREADY")
+        else:
+            f.close()
+            fp = open("coord.txt","a")
+            fp.write(put)
+            fp.close()
+
+def put_coord(startX,endX,startY,endY):
+    with open('coordinates.json', 'r') as f:
+        data = json.load(f)
+    already = False
+    for element in data["parking"]:
+        
+        if(element["startX"] == startX):
+            already = True
+            element["time"] += 30
+            break
+
+    if not already:
+        info = {
+            "startX": startX,
+            "endX": endX,
+            "startY": startY,
+            "endY": endY,
+            "time": 0
+        }
+        data["parking"].append(info)
+
+    with open('coordinates.json', 'w') as file:
+        json.dump(data, file)
+
 
 
 # |-------------------------------------------|
@@ -117,7 +155,6 @@ def yolo3_classify(image_yolo3, classes, COLORS):
                 class_ids.append(class_id)
                 confidences.append(float(confidence))
                 boxes.append([x, y, w, h])
-                print("X: {}, Y: {}, W: {}, H: {}".format( x, y, w, h))
     #label = "{}: {:.2f}%".format(class_ids[i], confidence * 100)
 
 
@@ -130,8 +167,10 @@ def yolo3_classify(image_yolo3, classes, COLORS):
         y = box[1]
         w = box[2]
         h = box[3]
+        print("X: {}, Y: {}, X+W: {}, Y+H: {}".format( x, y, x+w, y+h))
         print("{}: {:.2f}%".format(str(classes[class_ids[i]]), confidences[i]*100))
         draw_prediction(image_yolo3, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
+        put_coord(x, y, x+w, y+h)
 
 #TINY-YOLO3
 def tiny_yolo3_classify(image_yolo3_tiny, classes, COLORS):
@@ -169,7 +208,7 @@ def tiny_yolo3_classify(image_yolo3_tiny, classes, COLORS):
                 class_ids.append(class_id)
                 confidences.append(float(confidence))
                 boxes.append([x, y, w, h])
-                print("X: {}, Y: {}, W: {}, H: {}".format( x, y, w, h))
+                #print("X: {}, Y: {}, W: {}, H: {}".format( x, y, w, h))
                 #print("{}: {:.2f}%".format(str(class_id), confidence*100))
                 #label = "{}: {:.2f}%".format(class_ids[i], confidence * 100)
 
@@ -216,7 +255,7 @@ def mobilenet_classify(image_ssd_mobilenet, mob_classes, COLORS):
         dims = np.array([fW, fH, fW, fH])
         box = detections[0, 0, i, 3:7] * dims
         (startX, startY, endX, endY) = box.astype("int")
-        print("StartX: {}, StartY: {}, EndX: {}, EndY: {}".format(startX, startY, endX, endY))
+        print("StartX: {}, EndX: {}, StartY: {}, EndY: {}".format(startX, startY, endX, endY))
         # draw the prediction on the frame
         label = "{}: {:.2f}%".format(mob_classes[idx],confidence * 100)
         cv2.rectangle(image_ssd_mobilenet, (startX, startY), (endX, endY), COLORS[idx], 1)
@@ -302,11 +341,11 @@ def alexnet_classify(image_alexnet, alex_classes, COLORS):
 while(True):
     if (args.url == "yes"):
         start = time.time()
-        #url_img = "https://www.umass.edu/transportation/sites/default/files/IMG_2943_0.JPG"
-        
+        #img_url = "https://www.umass.edu/transportation/sites/default/files/IMG_2943_0.JPG"
+        img_url = "https://i.dailymail.co.uk/i/pix/2016/03/28/11/329BDAA800000578-3512279-image-a-36_1459160823373.jpg"
         #start = time.time();
-        image = get_cam_img()
-        
+        #image = get_cam_img()
+        image = get_img(img_url)
         #end = time.time();
         #print("[INFO] Download took {:.6f} seconds".format(end - start))
         
