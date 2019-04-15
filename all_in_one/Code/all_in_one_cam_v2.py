@@ -112,17 +112,18 @@ def calculate_IoU(boxA,boxB):
     YB= min(boxA[3],boxB[3])
 
     #calculate the intern area
-    interArea = max(0,XB-XA+1)* max(0,YB-YA+1)
+    interArea = max(0,XB-XA)* max(0,YB-YA)
 
     #calculate the area of both boxes
-    boxAArea = (boxA[1]-boxA[0]+1)*(boxA[3]-boxA[2]+1)
-    boxBArea = (boxB[1]-boxB[0]+1)*(boxB[3]-boxB[2]+1)
+    boxAArea = (boxA[1]-boxA[0])*(boxA[3]-boxA[2])
+    boxBArea = (boxB[1]-boxB[0])*(boxB[3]-boxB[2])
 
     #calculate the intersection-over union area
-    iou= interArea / float(boxAArea+bocBArea-interArea)
+    iou= interArea / float(boxAArea+boxBArea-interArea)
+    print(iou)
     return iou
 
-def calculate_free_spots(image,vehicleBoxes)
+def calculate_free_spots(image,vehicleBoxes):
     free_space=0
     slot_boxes = load_coord()
     for slot in slot_boxes:
