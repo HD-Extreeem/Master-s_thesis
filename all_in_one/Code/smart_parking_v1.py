@@ -1,10 +1,9 @@
 # -----------------------------------------------------------------|
 #   TO RUN TYPE:                                                   |
-#   python smart_parking_v1.py --image ../Image/park4.png --url no            |
+#   python smart_parking_v1.py
 # -----------------------------------------------------------------|
 
 import cv2
-import argparse
 import numpy as np
 import time
 import os
@@ -18,22 +17,22 @@ import io
 import json
 import math
 
-ap = argparse.ArgumentParser()
-ap.add_argument('-i', '--image', required=True,
-                help = 'path to input image')
-ap.add_argument('-u', '--url', required=True,
-                    help='Use URL image')
-args = ap.parse_args()
-
 classes = None
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
-interval = 10
+interval = 5
 vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.8
-image = cv2.imread(args.image)
-imgpath = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/park4_free.png"
-image2 = cv2.imread(imgpath)
+imgpath1 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/1.png"
+image1 = cv2.imread(imgpath1)
+imgpath2 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/2.png"
+image2 = cv2.imread(imgpath2)
+imgpath3 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/3.png"
+image3 = cv2.imread(imgpath3)
+imgpath4 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/4.png"
+image4 = cv2.imread(imgpath4)
+imgpath5 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/5.png"
+image5 = cv2.imread(imgpath5)
 
 
 with open("../yolo3/yolov3.txt", 'r') as f:
@@ -50,19 +49,7 @@ def get_cam_img():
     
     return image
 
-def read_put_coord(startX,endX,startY,endY):
-    put = "StartX-Endx: {} - {} ; StartY-EndY: {} - {} \n".format(startX , endX, startY, endY)
-    with open("coord.txt") as f :
-        content = f.read()
-        if(put in content):
-            print("EXISTS ALREADY")
-        else:
-            f.close()
-            fp = open("coord.txt","a")
-            fp.write(put)
-            fp.close()
-
-def put_coord(startX,endX,startY,endY):
+def put_coord(startX,endX,startY,endY,IoU):
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
     info = {
@@ -70,22 +57,26 @@ def put_coord(startX,endX,startY,endY):
         "endX": endX,
         "startY": startY,
         "endY": endY,
-        "time": 0
+        "IoU": IoU
     }
     data["parking"].append(info)
     with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
 def put_boxes (boxes):
-    for i in boxes:
-        put_coord( i[0], i[1], i[2], i[3])
+    boxes_new = calculate_park_IoU(boxes)
+    with open('coordinates.json', 'w') as file:
+        data = {"parking":[]}
+        json.dump(data, file)
+    for i in boxes_new:
+        put_coord( i[0], i[1], i[2], i[3], i[4])
 
 def load_coord():
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
     slot_box =[]
     for element in data["parking"]:
-        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"]])
+        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"]])
     return slot_box
 
 def replace_coord(old_startX,old_startY,startX,endX,startY,endY):
@@ -119,6 +110,19 @@ def calculate_IoU(boxA,boxB):
     #print(iou)
     return iou
 
+def calculate_park_IoU(places):
+    for i in places:
+        IoU_max=0
+        for j in places:
+            IoU = calculate_IoU(i,j)
+            if IoU_max < IoU and IoU < 0.99:
+                IoU_max=IoU
+        if(len(i)==4):
+            i.append(IoU_max)
+        else:
+            i[4]=IoU_max
+    return places
+
 def calculate_free_spots(image,p_boxes,v_boxes):
     free_space=0
     for slot in p_boxes:
@@ -130,8 +134,11 @@ def calculate_free_spots(image,p_boxes,v_boxes):
         x1 =int(slot[0])
         x2 =int(slot[1])
         y1 =int(slot[2])
-        y2 =int(slot[3])      
-        if IoU_max < 0.30:
+        y2 =int(slot[3])
+        print("P place coordinates are :",slot)
+        print("Maximum IoU is: ",IoU_max)
+        print("Parking space IoU is: ",slot[4])
+        if IoU_max < slot[4]+0.10:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),10)
            free_space += 1
         if IoU_max > 0.70:
@@ -150,15 +157,15 @@ def compare_spots(p_boxes,v_boxes):
             IoU = calculate_IoU(park,vehicle)
             if IoU_max < IoU:
                IoU_max=IoU
-        x1,x2,y1,y2 = park
+               x1,x2,y1,y2,temp_iou = park
         X1,X2,Y1,Y2=vehicle
-        print("kolla   :", x1,x2,y1,y2)
-        if IoU_max < 0.20:
+        if IoU_max < (temp_iou + 0.1):
             print("Lägger till en ny p_plats")
-            put_coord(x1,x2,y1,y2)
-            print("New park space:", x1,x2,y1,y2)
+            p_boxes.append([X1,X2,Y1,Y2])
+            put_boxes(p_boxes)
+            print("New park space:", X1,X2,Y1,Y2)
             print("IoU is: ", IoU_max )
-            p_boxes =[]
+            p_boxes.clear()
             p_boxes = load_coord()
         elif IoU_max > 0.80:
             print("Tar medelvärdet och uppdaterar, IoU is:", IoU_max)
@@ -167,8 +174,9 @@ def compare_spots(p_boxes,v_boxes):
             Y1=(y1+Y1)/2
             Y2=(y2+Y2)/2
             replace_coord(x1,y1,X1,X2,Y1,Y2)
-            p_boxes=[]
+            p_boxes.clear()
             p_boxes = load_coord()
+    print("number OF TOTAL P PLACE : ", len(p_boxes))
     return p_boxes
 
 def compare_boxes(BOXA,BOXB):
@@ -271,11 +279,11 @@ def yolo3_classify(image_yolo, classes, COLORS):
         y2 = box[3]+box[1]
         #print("X: {}, Y: {}, X+W: {}, Y+H: {}".format( x1, y1, x2, y2))
         #print("{}: {:.2f}%".format(str(classes[class_ids[i]]), confidences[i]*100))
-        draw_prediction(image_yolo, class_ids[i], confidences[i], round(x1), round(y1), round(x2), round(y2))
+        #draw_prediction(image_yolo, class_ids[i], confidences[i], round(x1), round(y1), round(x2), round(y2))
         BOX.append([x1,x2,y1,y2])
-    image_yolo = cv2.resize(image_yolo, (800, 600))
-    cv2.imshow("YOLO3", image_yolo)
-    cv2.waitKey()
+    #image_yolo = cv2.resize(image_yolo, (800, 600))
+    #cv2.imshow("YOLO3", image_yolo)
+    #cv2.waitKey()
     return BOX
 
 
@@ -288,9 +296,24 @@ with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
 print("Program starts")
-image_yolo3 = copy(image2)
-img = copy(image2)
+
 while(True):
+    x = int(input("Enter the image number...")) #integer input
+    if x==1:
+        image_yolo3 = copy(image1)
+        img = copy(image1)
+    elif x==2:
+        image_yolo3 = copy(image2)
+        img = copy(image2)
+    elif x==3:
+        image_yolo3 = copy(image3)
+        img = copy(image3)
+    elif x==4:
+        image_yolo3 = copy(image4)
+        img = copy(image4)
+    elif x==5:
+        image_yolo3 = copy(image5)
+        img = copy(image5)
     start = time.time()
     print("Loads coordinates")
     park_boxes = load_coord()
@@ -343,14 +366,7 @@ while(True):
     #index += 1
     image_yolo3 = cv2.resize(image_yolo3, (800, 600))
     cv2.imshow("Parking Spaces", image_yolo3)
-    cv2.waitKey()
-    x = int(input("1==busy, 0==free")) #integer input
-    image = cv2.imread(args.image)
-    image2 = cv2.imread(imgpath)
-    if x==1:
-        image_yolo3 = image
-    if x==0:
-        image_yolo3 = image2
+    cv2.waitKey(0)
     cv2.destroyAllWindows()
-    v_boxes=[]
+    vehicle_boxes.clear()
 
