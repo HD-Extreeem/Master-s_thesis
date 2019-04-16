@@ -32,7 +32,7 @@ vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.8
 image = cv2.imread(args.image)
-imgpath = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/park4_empty.png"
+imgpath = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/park4_free.png"
 image2 = cv2.imread(imgpath)
 
 
@@ -142,6 +142,8 @@ def calculate_free_spots(image,p_boxes,v_boxes):
 
 
 def compare_spots(p_boxes,v_boxes):
+    print("Number of p boxes is:", len(p_boxes))
+    print("Number of v boxes is:", len(v_boxes))
     for vehicle in v_boxes:
         IoU_max = 0
         for park in p_boxes:
@@ -154,30 +156,35 @@ def compare_spots(p_boxes,v_boxes):
         if IoU_max < 0.20:
             print("Lägger till en ny p_plats")
             put_coord(x1,x2,y1,y2)
+            print("New park space:", x1,x2,y1,y2)
+            print("IoU is: ", IoU_max )
+            p_boxes =[]
             p_boxes = load_coord()
         elif IoU_max > 0.80:
-            print("Tar medelvärdet och uppdaterar")
+            print("Tar medelvärdet och uppdaterar, IoU is:", IoU_max)
             X1=(x1+X1)/2
             X2=(x2+X2)/2
             Y1=(y1+Y1)/2
             Y2=(y2+Y2)/2
             replace_coord(x1,y1,X1,X2,Y1,Y2)
+            p_boxes=[]
             p_boxes = load_coord()
-    park_boxes=p_boxes
+    return p_boxes
 
 def compare_boxes(BOXA,BOXB):
-    Xa1 = BOXA[0]
-    Xa2 = BOXA[1]
-    Ya1 = BOXA[2]
-    Ya2 = BOXA[3]
-    Xb1 = BOXB[0]
-    Xb2 = BOXB[1]
-    Yb1 = BOXB[2]
-    Yb2 = BOXB[3]
-    dist1 = math.sqrt( (Xa1 - Xb1)**2 + (Ya1 - Yb1)**2 )
-    dist2 = math.sqrt( (Xa2 - Xb2)**2 + (Ya2 - Yb2)**2 )
-    distRef = math.sqrt( (Xa1 - Xa2)**2 + (Ya1 - Ya2)**2 )
-    if (dist1 < (distRef/20)) and (dist2 < (distRef/20)):
+    #Xa1 = BOXA[0]
+    #Xa2 = BOXA[1]
+    #Ya1 = BOXA[2]
+    #Ya2 = BOXA[3]
+    #Xb1 = BOXB[0]
+    #Xb2 = BOXB[1]
+    #Yb1 = BOXB[2]
+    #Yb2 = BOXB[3]
+    #dist1 = math.sqrt( (Xa1 - Xb1)**2 + (Ya1 - Yb1)**2 )
+    #dist2 = math.sqrt( (Xa2 - Xb2)**2 + (Ya2 - Yb2)**2 )
+    #distRef = math.sqrt( (Xa1 - Xa2)**2 + (Ya1 - Ya2)**2 )
+    #if (dist1 < (distRef/20)) and (dist2 < (distRef/20)):
+    if calculate_IoU(BOXA,BOXB)>0.9:
         return True
     else:
         return False
@@ -220,12 +227,12 @@ def draw_prediction(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
 
     cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.4, color, 1)
 
-def yolo3_classify(image_yolo3, classes, COLORS):
-    Width = image_yolo3.shape[1]
-    Height = image_yolo3.shape[0]
+def yolo3_classify(image_yolo, classes, COLORS):
+    Width = image_yolo.shape[1]
+    Height = image_yolo.shape[0]
     scale = 0.00392
     net = cv2.dnn.readNet("../yolo3/yolov3.cfg", "../yolo3/yolov3.weights")
-    blob = cv2.dnn.blobFromImage(image_yolo3, scale, (416,416), (0,0,0), True, crop=False)
+    blob = cv2.dnn.blobFromImage(image_yolo, scale, (416,416), (0,0,0), True, crop=False)
     net.setInput(blob)
     start = time.time()
     outs = net.forward(get_output_layers(net))
@@ -264,8 +271,11 @@ def yolo3_classify(image_yolo3, classes, COLORS):
         y2 = box[3]+box[1]
         #print("X: {}, Y: {}, X+W: {}, Y+H: {}".format( x1, y1, x2, y2))
         #print("{}: {:.2f}%".format(str(classes[class_ids[i]]), confidences[i]*100))
-        #draw_prediction(image_yolo3, class_ids[i], confidences[i], round(x1), round(y1), round(x2), round(y2))
+        draw_prediction(image_yolo, class_ids[i], confidences[i], round(x1), round(y1), round(x2), round(y2))
         BOX.append([x1,x2,y1,y2])
+    image_yolo = cv2.resize(image_yolo, (800, 600))
+    cv2.imshow("YOLO3", image_yolo)
+    cv2.waitKey()
     return BOX
 
 
@@ -276,9 +286,10 @@ def yolo3_classify(image_yolo3, classes, COLORS):
 with open('coordinates.json', 'w') as file:
         data = {"parking":[]}
         json.dump(data, file)
-index=0
+
 print("Program starts")
-image_yolo3 = copy(image)
+image_yolo3 = copy(image2)
+img = copy(image2)
 while(True):
     start = time.time()
     print("Loads coordinates")
@@ -291,15 +302,15 @@ while(True):
 # Methods for classifying the objects-
 #-------------------------------------
     print("Classifying with Yolov3")
-    vehicle_boxes = yolo3_classify(image_yolo3, classes, COLORS)
-    if len(vehicle_boxes) > len(park_boxes):
-        print("New parking space might be found")
+    vehicle_boxes = yolo3_classify(img, classes, COLORS)
+    if len(vehicle_boxes) > 0:
+        print("Number of detected vehicle is: ",len(vehicle_boxes))
         while True:
             time.sleep(interval)
             print("Second round classifying just to be sure")
-            vehicle_boxes2 = yolo3_classify(image_yolo3, classes, COLORS)
+            vehicle_boxes2 = yolo3_classify(img, classes, COLORS)
             if(compare_list(vehicle_boxes,vehicle_boxes2)):
-                print("We are sure that a new car or new space is there")
+                print("We are sure that at least one vehicle is there")
                 break
             else: 
                 print("We will classify again")
@@ -310,7 +321,7 @@ while(True):
             put_boxes(park_boxes)
         else:
             print("Comparing the spots")
-            compare_spots(park_boxes,vehicle_boxes)
+            park_boxes = compare_spots(park_boxes,vehicle_boxes)
     #print("Json coordinats in the end", park_boxes)
     print("Calculating free spots")
     calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
@@ -331,7 +342,7 @@ while(True):
       #  cv2.waitKey()
     #index += 1
     image_yolo3 = cv2.resize(image_yolo3, (800, 600))
-    cv2.imshow("YOLO3", image_yolo3)
+    cv2.imshow("Parking Spaces", image_yolo3)
     cv2.waitKey()
     x = int(input("1==busy, 0==free")) #integer input
     image = cv2.imread(args.image)
