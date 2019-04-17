@@ -8,7 +8,6 @@ import numpy as np
 import time
 import os
 import operator
-import caffe_classes_alex
 from urllib.request import urlopen
 from copy import copy
 import requests
@@ -35,7 +34,7 @@ imgpath5 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/5.png
 image5 = cv2.imread(imgpath5)
 
 
-with open("../yolo3/yolov3.txt", 'r') as f:
+with open("../../yolo3/yolov3.txt", 'r') as f:
     classes = [line.strip() for line in f.readlines()]
 
 COLORS = np.random.uniform(0, 255, size=(len(classes), 3))
@@ -298,7 +297,11 @@ with open('coordinates.json', 'w') as file:
 print("Program starts")
 
 while(True):
-    x = int(input("Enter the image number...")) #integer input
+    try:
+        x = int(input("Enter the image number...")) #integer input
+    except ValueError:
+        x=1
+        
     if x==1:
         image_yolo3 = copy(image1)
         img = copy(image1)
