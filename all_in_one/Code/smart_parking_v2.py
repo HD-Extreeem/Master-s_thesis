@@ -21,7 +21,7 @@ url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1
 interval = 5
 vehicle_boxes=[]
 park_boxes=[]
-classify_treshold = 0.8
+classify_treshold = 0.5
 imgpath1 = "../Image/1.png"
 image1 = cv2.imread(imgpath1)
 imgpath2 = "../Image/2.png"
@@ -32,6 +32,10 @@ imgpath4 = "../Image/4.png"
 image4 = cv2.imread(imgpath4)
 imgpath5 = "../Image/5.png"
 image5 = cv2.imread(imgpath5)
+imgpath6 = "../Image/park_stor.jpg"
+image6 = cv2.imread(imgpath6)
+imgpath7 = "../Image/park_cnr.png"
+image7 = cv2.imread(imgpath7)
 
 with open("../yolo3/yolov3.txt", 'r') as f:
     classes = [line.strip() for line in f.readlines()]
@@ -323,6 +327,12 @@ while(True):
     elif x==5:
         image_yolo3 = copy(image5)
         img = copy(image5)
+    elif x==6:
+        image_yolo3 = copy(image6)
+        img = copy(image6)
+    elif x==7:
+        image_yolo3 = copy(image7)
+        img = copy(image7)
     start = time.time()
     print("Loads coordinates")
     park_boxes = load_coord()
