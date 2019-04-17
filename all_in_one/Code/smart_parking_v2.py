@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------|
 #   TO RUN TYPE:                                                   |
-#   python smart_parking_v1.py
+#   python smart_parking_v2.py
 # -----------------------------------------------------------------|
-
+# -*- coding: utf-8 -*-
 import cv2
 import numpy as np
 import time
@@ -22,19 +22,18 @@ interval = 5
 vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.8
-imgpath1 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/1.png"
+imgpath1 = "../Image/1.png"
 image1 = cv2.imread(imgpath1)
-imgpath2 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/2.png"
+imgpath2 = "../Image/2.png"
 image2 = cv2.imread(imgpath2)
-imgpath3 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/3.png"
+imgpath3 = "../Image/3.png"
 image3 = cv2.imread(imgpath3)
-imgpath4 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/4.png"
+imgpath4 = "../Image/4.png"
 image4 = cv2.imread(imgpath4)
-imgpath5 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/5.png"
+imgpath5 = "../Image/5.png"
 image5 = cv2.imread(imgpath5)
 
-
-with open("../../yolo3/yolov3.txt", 'r') as f:
+with open("../yolo3/yolov3.txt", 'r') as f:
     classes = [line.strip() for line in f.readlines()]
 
 COLORS = np.random.uniform(0, 255, size=(len(classes), 3))
@@ -69,6 +68,8 @@ def put_boxes (boxes):
         json.dump(data, file)
     for i in boxes_new:
         put_coord( i[0], i[1], i[2], i[3], i[4])
+
+#def sort_parking_id():
 
 def load_coord():
     with open('coordinates.json', 'r') as f:
@@ -157,8 +158,9 @@ def compare_spots(p_boxes,v_boxes):
             if IoU_max < IoU:
                IoU_max=IoU
                x1,x2,y1,y2,temp_iou = park
-        X1,X2,Y1,Y2=vehicle
-        if IoU_max < (temp_iou + 0.1):
+        X1,X2,Y1,Y2,v_type = vehicle
+        if IoU_max < (temp_iou + 0.20):
+            print("Temp IoU = ",temp_iou)
             print("Lägger till en ny p_plats")
             p_boxes.append([X1,X2,Y1,Y2])
             put_boxes(p_boxes)
@@ -166,7 +168,7 @@ def compare_spots(p_boxes,v_boxes):
             print("IoU is: ", IoU_max )
             p_boxes.clear()
             p_boxes = load_coord()
-        elif IoU_max > 0.80:
+        elif IoU_max > 0.80 and v_type != "motorcycle" and v_type != "bus":
             print("Tar medelvärdet och uppdaterar, IoU is:", IoU_max)
             X1=(x1+X1)/2
             X2=(x2+X2)/2
@@ -270,16 +272,20 @@ def yolo3_classify(image_yolo, classes, COLORS):
     indices = cv2.dnn.NMSBoxes(boxes, confidences, classify_treshold, nms_threshold)
 
     for i in indices:
+        
         i = i[0]
-        box = boxes[i]
-        x1 = box[0]
-        x2 = box[0]+box[2]
-        y1 = box[1]
-        y2 = box[3]+box[1]
+        if(str(classes[class_ids[i]]) == "car" or str(classes[class_ids[i]]) == "truck" or str(classes[class_ids[i]]) == "motorcycle" or str(classes[class_ids[i]]) == "bus"):
+            box = boxes[i]
+            x1 = box[0]
+            x2 = box[0]+box[2]
+            y1 = box[1]
+            y2 = box[3]+box[1]
+            #print("Classes = ",str(classes[class_ids[i]]))
+            BOX.append([x1,x2,y1,y2,str(classes[class_ids[i]])])
         #print("X: {}, Y: {}, X+W: {}, Y+H: {}".format( x1, y1, x2, y2))
         #print("{}: {:.2f}%".format(str(classes[class_ids[i]]), confidences[i]*100))
         #draw_prediction(image_yolo, class_ids[i], confidences[i], round(x1), round(y1), round(x2), round(y2))
-        BOX.append([x1,x2,y1,y2])
+
     #image_yolo = cv2.resize(image_yolo, (800, 600))
     #cv2.imshow("YOLO3", image_yolo)
     #cv2.waitKey()
