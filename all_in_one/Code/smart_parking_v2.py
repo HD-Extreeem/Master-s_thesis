@@ -74,27 +74,13 @@ def put_boxes (boxes):
         put_coord( i[0], i[1], i[2], i[3], i[4])
 
 def sort_parking_id(v_boxes, image):
-    x = 0
-    y = 0
-    sort_boxes = v_boxes.copy()
-    new_box = []
+    
+    sorted_boxes = sorted(v_boxes,key=lambda x : (x[0],x[2]))
     num = 1
-    low = []
-    for i in sort_boxes:
-        x = i[0]
-        y = i[3]
-        print("List is :", sort_boxes)
-        for j in sort_boxes:
-            if x > j[0] and y > j[3]:
-                x = j[0]
-                y = j[3]
-                low = j
-        
-        new_box.append([x,y])
-        sort_boxes.remove(low)
-    for box in new_box:
+
+    for box in sorted_boxes:
         #label = "{:.2f}".format(num)
-        cv2.putText(image, str(num), (int(box[0])+50,int(box[1])+50), cv2.FONT_HERSHEY_SIMPLEX, 4, (0,255,0), 3)
+        cv2.putText(image, str(num), (int(box[0])+50,int(box[2])+50), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,255,0), 6)
         num+=1
 
 
