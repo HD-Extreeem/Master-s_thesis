@@ -69,7 +69,30 @@ def put_boxes (boxes):
     for i in boxes_new:
         put_coord( i[0], i[1], i[2], i[3], i[4])
 
-#def sort_parking_id():
+def sort_parking_id(v_boxes, image):
+    x = 0
+    y = 0
+    sort_boxes = v_boxes.copy()
+    new_box = []
+    num = 1
+    low = []
+    for i in sort_boxes:
+        x = i[0]
+        y = i[3]
+        print("List is :", sort_boxes)
+        for j in sort_boxes:
+            if x > j[0] and y > j[3]:
+                x = j[0]
+                y = j[3]
+                low = j
+        
+        new_box.append([x,y])
+        sort_boxes.remove(low)
+    for box in new_box:
+        #label = "{:.2f}".format(num)
+        cv2.putText(image, str(num), (int(box[0])+50,int(box[1])+50), cv2.FONT_HERSHEY_SIMPLEX, 4, (0,255,0), 3)
+        num+=1
+
 
 def load_coord():
     with open('coordinates.json', 'r') as f:
@@ -251,7 +274,7 @@ def yolo3_classify(image_yolo, classes, COLORS):
     confidences = []
     boxes = []
     BOX =[]
-    nms_threshold = 0.4
+    nms_threshold = 0.2
 
     for out in outs:
         for detection in out:
@@ -357,7 +380,7 @@ while(True):
     #print("Json coordinats in the end", park_boxes)
     print("Calculating free spots")
     calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
-
+    sort_parking_id(vehicle_boxes, image_yolo3)
 
 #-----------------
 # Show the images-
