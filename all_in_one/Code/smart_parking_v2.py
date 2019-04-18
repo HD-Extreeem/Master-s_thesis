@@ -51,7 +51,7 @@ def get_cam_img():
     
     return image
 
-def put_coord(startX,endX,startY,endY,IoU):
+def put_coord(startX,endX,startY,endY,IoU,ID,state):
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
     info = {
@@ -59,7 +59,9 @@ def put_coord(startX,endX,startY,endY,IoU):
         "endX": endX,
         "startY": startY,
         "endY": endY,
-        "IoU": IoU
+        "IoU": IoU,
+        "ID":ID,
+        "State":state
     }
     data["parking"].append(info)
     with open('coordinates.json', 'w') as file:
@@ -67,21 +69,32 @@ def put_coord(startX,endX,startY,endY,IoU):
 
 def put_boxes (boxes):
     boxes_new = calculate_park_IoU(boxes)
+    boxes_new = sort_parking_id(boxes_new)
     with open('coordinates.json', 'w') as file:
         data = {"parking":[]}
         json.dump(data, file)
     for i in boxes_new:
-        put_coord( i[0], i[1], i[2], i[3], i[4])
+        if len(i)==6:
+            i.append("Busy")
+            put_coord( i[0], i[1], i[2], i[3], i[4], i[5], i[6])
+        else:
+            put_coord( i[0], i[1], i[2], i[3], i[4], i[5], i[6])
 
-def sort_parking_id(v_boxes, image):
+def sort_parking_id(boxes):
     
-    sorted_boxes = sorted(v_boxes,key=lambda x : (x[0],x[2]))
+    sorted_boxes = sorted(boxes,key=lambda x : (x[0],x[2]))
     num = 1
-
-    for box in sorted_boxes:
+    for i in sorted_boxes: 
+        #print(type(boxes[0]))
         #label = "{:.2f}".format(num)
-        cv2.putText(image, str(num), (int(box[0])+50,int(box[2])+50), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,255,0), 6)
+        length = len(i)
+        if length==5:
+            i.append(num)
+        else:
+            i[5]=num
         num+=1
+    return sorted_boxes
+    
 
 
 def load_coord():
@@ -89,7 +102,7 @@ def load_coord():
         data = json.load(f)
     slot_box =[]
     for element in data["parking"]:
-        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"]])
+        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"],element["ID"],celement["State"]])
     return slot_box
 
 def replace_coord(old_startX,old_startY,startX,endX,startY,endY):
@@ -148,14 +161,24 @@ def calculate_free_spots(image,p_boxes,v_boxes):
         x2 =int(slot[1])
         y1 =int(slot[2])
         y2 =int(slot[3])
+        Id = slot[5]
+        State =""
         print("P place coordinates are :",slot)
         print("Maximum IoU is: ",IoU_max)
         print("Parking space IoU is: ",slot[4])
         if IoU_max < slot[4]+0.10:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),10)
            free_space += 1
+           State="Free"
         if IoU_max > 0.70:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,0,255),10)
+           State = "Busy"
+        if len(slot)<7:
+            slot.append(State)
+        else:
+            slot[6]=State
+        cv2.putText(image, str(Id), (x1+50,y1+50), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,255,0), 6)
+    put_boxes(p_boxes)
     print("Number of free parking space is: ",free_space)
     print("Number of total parking space is: ",len(p_boxes))
     return free_space
@@ -164,13 +187,15 @@ def calculate_free_spots(image,p_boxes,v_boxes):
 def compare_spots(p_boxes,v_boxes):
     print("Number of p boxes is:", len(p_boxes))
     print("Number of v boxes is:", len(v_boxes))
+    print(p_boxes)
     for vehicle in v_boxes:
         IoU_max = 0
         for park in p_boxes:
             IoU = calculate_IoU(park,vehicle)
             if IoU_max < IoU:
                IoU_max=IoU
-               x1,x2,y1,y2,temp_iou = park
+               print(park)
+               x1,x2,y1,y2,temp_iou,Id,state = park
         X1,X2,Y1,Y2,v_type = vehicle
         if IoU_max < (temp_iou + 0.20):
             print("Temp IoU = ",temp_iou)
@@ -372,11 +397,12 @@ while(True):
             put_boxes(park_boxes)
         else:
             print("Comparing the spots")
+            park_boxes = load_coord()
+            print(park_boxes)
             park_boxes = compare_spots(park_boxes,vehicle_boxes)
     #print("Json coordinats in the end", park_boxes)
     print("Calculating free spots")
     calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
-    sort_parking_id(vehicle_boxes, image_yolo3)
 
 #-----------------
 # Show the images-
