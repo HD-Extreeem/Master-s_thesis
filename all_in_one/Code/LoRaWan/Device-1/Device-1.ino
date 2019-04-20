@@ -9,11 +9,11 @@ const uint8_t appEUI[8] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x00, 0xA2, 0x22 };
 
 String payload = "";
 bool new_message = false;
-
-int id = 15;
-int total_place = 7;
-int total_free = 5;
-byte data_payload[6];
+String key = "";
+uint8_t id = 15;
+uint8_t total_place = 7;
+uint8_t total_free = 5;
+uint8_t data_payload[4];
 
 void setup() {
   // open a serial connection
@@ -34,32 +34,39 @@ void loop() {
   }
   if (new_message) {
     payload.trim();
-    Serial.println(payload);
-    if (payload.equals("Send")) {
+    key = payload.substring(0, 3);
+    id = (uint8_t) payload.substring(4, 7).toInt();
+    total_place = (uint8_t) payload.substring(8, 11).toInt();
+    total_free = (uint8_t) payload.substring(12, 15).toInt();
+    Serial.println(id);
+    Serial.println(total_place);
+    Serial.println(total_free);
+    if (key.equals("New")) {
       Serial.println("Message is correct");
-      data_payload[0] = highByte(id);
-      data_payload[1] = lowByte(id);
-      data_payload[2] = highByte(total_place);
-      data_payload[3] = lowByte(total_place);
-      data_payload[4] = highByte(total_free);
-      data_payload[5] = lowByte(total_free);
+      data_payload[0] = id;
+      data_payload[1] = total_place;
+      data_payload[2] = total_free;
       SendPayload(data_payload);
       Serial.println("Sending");
-      
+
     }
     Serial.println("Refresh the payload");
     payload = "";
+    key="";
+    id=0;
+    total_place=0;
+    total_free=0;
     memset(data_payload, 0, sizeof(data_payload));
     new_message = false;
   }
 }
 
-bool SendPayload (byte message[]) {
+bool SendPayload (uint8_t message[]) {
   bool success = false;
   int send_try = 0;
 
   while (send_try <= 9) {
-    if (LoRa_send(1, (uint8_t*)message, sizeof(message), 1)) {
+    if (LoRa_send(1, (uint8_t*)message, (sizeof(message) + 1), 1)) {
       success = true;
       send_try = 10;
       delay(10000);
