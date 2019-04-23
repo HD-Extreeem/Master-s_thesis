@@ -14,11 +14,15 @@ import requests
 from PIL import Image
 import io
 import json
+import serial
 import math
 
 classes = None
+ser = serial.Serial('/dev/ttyACM1',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
+ID = 1
 interval = 5
+free_spaces = -1
 vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.5
@@ -393,7 +397,7 @@ while(True):
                 vehicle_boxes = vehicle_boxes2
         if len(park_boxes) == 0:
             print("This is new program put every box as a parking space")
-            park_boxes = vehicle_boxes
+            park_boxes = copy(vehicle_boxes)
             put_boxes(park_boxes)
         else:
             print("Comparing the spots")
@@ -402,7 +406,8 @@ while(True):
             park_boxes = compare_spots(park_boxes,vehicle_boxes)
     #print("Json coordinats in the end", park_boxes)
     print("Calculating free spots")
-    calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
+    new_free_spaces = calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
+    
 
 #-----------------
 # Show the images-
@@ -423,4 +428,12 @@ while(True):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     vehicle_boxes.clear()
+    print(park_boxes)
+    if(free_spaces != new_free_spaces):
+       lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
+       print(lora_message)
+       ser.write(lora_message.encode())
+       str1=ser.readline()
+       print(str1)
+       free_spaces = new_free_spaces
 

@@ -10,9 +10,9 @@ const uint8_t appEUI[8] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x00, 0xA2, 0x22 };
 String payload = "";
 bool new_message = false;
 String key = "";
-uint8_t id = 15;
-uint8_t total_place = 7;
-uint8_t total_free = 5;
+char* id = 15;
+char* total_place = 7;
+char* total_free = 5;
 uint8_t data_payload[4];
 
 void setup() {
@@ -34,28 +34,32 @@ void loop() {
   }
   if (new_message) {
     payload.trim();
-    key = payload.substring(0, 3);
-    id = (uint8_t) payload.substring(4, 7).toInt();
-    total_place = (uint8_t) payload.substring(8, 11).toInt();
-    total_free = (uint8_t) payload.substring(12, 15).toInt();
-    Serial.println(id);
-    Serial.println(total_place);
-    Serial.println(total_free);
+    char str_payload[payload.length() + 1] ;
+    payload.toCharArray(str_payload, payload.length() + 1);
+    key = strtok(str_payload, "-");
+    id = strtok(NULL, "-");
+    total_place =  strtok(NULL, "-");
+    total_free =  (strtok(NULL, "-"));
+    //key = payload.substring(0, 3);
+    //id = (uint8_t) payload.substring(4, 7).toInt();
+    //total_place = (uint8_t) payload.substring(8, 11).toInt();
+    //total_free = (uint8_t) payload.substring(12, 15).toInt();
+
     if (key.equals("New")) {
-      Serial.println("Message is correct");
-      data_payload[0] = id;
-      data_payload[1] = total_place;
-      data_payload[2] = total_free;
+      //  Serial.println("Message is correct");
+      data_payload[0] = (uint8_t)atoi(id);
+      data_payload[1] = (uint8_t)atoi(total_place);
+      data_payload[2] = (uint8_t)atoi(total_free);
       SendPayload(data_payload);
-      Serial.println("Sending");
+      // Serial.println("Sending");
 
     }
-    Serial.println("Refresh the payload");
+    //  Serial.println("Refresh the payload");
     payload = "";
-    key="";
-    id=0;
-    total_place=0;
-    total_free=0;
+    key = "";
+    id = 0;
+    total_place = 0;
+    total_free = 0;
     memset(data_payload, 0, sizeof(data_payload));
     new_message = false;
   }
