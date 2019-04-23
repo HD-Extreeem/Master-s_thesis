@@ -102,7 +102,7 @@ def load_coord():
         data = json.load(f)
     slot_box =[]
     for element in data["parking"]:
-        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"],element["ID"],celement["State"]])
+        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"],element["ID"],element["State"]])
     return slot_box
 
 def replace_coord(old_startX,old_startY,startX,endX,startY,endY):
