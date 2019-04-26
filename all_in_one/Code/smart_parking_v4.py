@@ -14,11 +14,11 @@ import requests
 from PIL import Image
 import io
 import json
-import serial
+#import serial
 import math
 
 classes = None
-ser = serial.Serial('/dev/ttyACM1',9600,5)
+#ser = serial.Serial('/dev/ttyACM1',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 5
@@ -318,31 +318,15 @@ print("Program starts")
 
 while(True):
     try:
-        x = int(input("Enter the image number...")) #integer input
+        x = int(input("Enter the image number from 1-7...")) #integer input
     except ValueError:
         x=1
-        
-    if x==1:
-        image_yolo3 = copy(image1)
-    #img = copy(image1)
-    elif x==2:
-        image_yolo3 = copy(image2)
-    #   img = copy(image2)
-    elif x==3:
-        image_yolo3 = copy(image3)
-    #   img = copy(image3)
-    elif x==4:
-        image_yolo3 = copy(image4)
-    #   img = copy(image4)
-    elif x==5:
-        image_yolo3 = copy(image5)
-    #   img = copy(image5)
-    elif x==6:
-        image_yolo3 = copy(image6)
-    #   img = copy(image6)
-    elif x==7:
-        image_yolo3 = copy(image7)
-    #   img = copy(image7)
+    if(x<1 or x>7):
+        print("Value out of bounds, choses img 1 instead")
+        x=1
+
+    image_yolo3 = copy(vars()["image"+str(x)])
+
     start = time.time()
     print("Loads coordinates")
     park_boxes = load_coord()
@@ -393,11 +377,11 @@ while(True):
     cv2.destroyAllWindows()
     vehicle_boxes.clear()
     print(park_boxes)
-    if(free_spaces != new_free_spaces):
+    '''if(free_spaces != new_free_spaces):
        lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
        print(lora_message)
        ser.write(lora_message.encode())
        str1=ser.readline()
        print(str1)
-       free_spaces = new_free_spaces
+       free_spaces = new_free_spaces'''
 
