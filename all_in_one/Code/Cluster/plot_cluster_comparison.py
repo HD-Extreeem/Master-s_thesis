@@ -44,17 +44,19 @@ Box = load_coord()
 np.random.seed(0)
 parking_dataset =[]
 for element in Box:
+    parking_dataset.append([int(np.average(element[:2])),int(np.average(element[2:]))])
     for x in range(10):
-        rand = random.randint(100,300)
+        rand = random.randint(20,50)
         #parking_dataset.append(int(element[0]+rand))
         #parking_dataset.append(int(element[1]+rand))
         #parking_dataset.append(int(element[2]+rand))
         #parking_dataset.append(int(element[3]+rand))
-        
-        parking_dataset.append([int(element[0]+rand),int(element[1]+rand),int(element[2]+rand),int(element[3]+rand) ])
+        parking_dataset.append([int(np.average(element[:2])+rand),int(np.average(element[2:])+rand)])
+       # parking_dataset.append([int(element[0]+rand),int(element[1]+rand),int(element[2]+rand),int(element[3]+rand) ])
 
 #print(parking_dataset)
 
+parking_dataset.append([int(2809),int(1250)])
 
 # Generate datasets. We choose the size big enough to see the scalability
 # of the algorithms, but not too big to avoid too long running times
@@ -80,7 +82,7 @@ plt.subplots_adjust(left=.02, right=.98, bottom=.001, top=.96, wspace=.05,
 plot_num = 1
 new_array = np.array(parking_dataset), None
 print(new_array)
-datasets = [new_array, new_array, new_array, new_array]
+datasets = [new_array]
 #datasets = parking_dataset
 #for i_dataset, dataset in enumerate(datasets):
 for i_dataset, dataset in enumerate(datasets):
@@ -97,14 +99,14 @@ for i_dataset, dataset in enumerate(datasets):
     connectivity = 0.5 * (connectivity + connectivity.T)
 
     # create clustering estimators
-    ms = cluster.MeanShift(bandwidth=bandwidth, bin_seeding=True)
+    ms = cluster.MeanShift(bandwidth=bandwidth, bin_seeding=True,cluster_all=False)
     two_means = cluster.MiniBatchKMeans(n_clusters=7)
     ward = cluster.AgglomerativeClustering(n_clusters=7, linkage='ward',
                                            connectivity=connectivity)
     spectral = cluster.SpectralClustering(n_clusters=7,
                                           eigen_solver='arpack',
                                           affinity="nearest_neighbors")
-    dbscan = cluster.DBSCAN(eps=200)
+    dbscan = cluster.DBSCAN(eps=100,min_samples =2)
     affinity_propagation = cluster.AffinityPropagation(damping=.9,
                                                        preference=-200)
 
@@ -113,14 +115,17 @@ for i_dataset, dataset in enumerate(datasets):
         connectivity=connectivity)
 
     birch = cluster.Birch(n_clusters=7)
-    clustering_algorithms = [
-        two_means, affinity_propagation, ms, spectral, ward, average_linkage,
-        dbscan, birch]
+    #clustering_algorithms = [
+     #   two_means, affinity_propagation, ms, spectral, ward, average_linkage,
+      #  dbscan, birch]
+
+    clustering_algorithms = [ms]
 
     for name, algorithm in zip(clustering_names, clustering_algorithms):
         # predict cluster memberships
         t0 = time.time()
         algorithm.fit(X)
+        print(algorithm.labels_)
         t1 = time.time()
         if hasattr(algorithm, 'labels_'):
             y_pred = algorithm.labels_.astype(np.int)
