@@ -18,7 +18,7 @@ import serial
 import math
 
 classes = None
-ser = serial.Serial('/dev/ttyACM1',9600,5)
+#ser = serial.Serial('/dev/ttyACM1',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 5
@@ -26,10 +26,12 @@ free_spaces = -1
 vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.5
-imgpath1 = "../Image/1.png"
+imgpath1 = "../Image/Test1.jpg"
 image1 = cv2.imread(imgpath1)
-imgpath2 = "../Image/2.png"
+image1 = cv2.resize(image1, (1920, 1080))
+imgpath2 = "../Image/Test2.jpg"
 image2 = cv2.imread(imgpath2)
+image2 = cv2.resize(image2, (1920, 1080))
 imgpath3 = "../Image/3.png"
 image3 = cv2.imread(imgpath3)
 imgpath4 = "../Image/4.png"
@@ -432,8 +434,8 @@ while(True):
     if(free_spaces != new_free_spaces):
        lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
        print(lora_message)
-       ser.write(lora_message.encode())
-       str1=ser.readline()
-       print(str1)
+       #ser.write(lora_message.encode())
+       #str1=ser.readline()
+       #print(str1)
        free_spaces = new_free_spaces
 
