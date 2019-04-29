@@ -50,8 +50,13 @@ void loop() {
       data_payload[0] = (uint8_t)atoi(id);
       data_payload[1] = (uint8_t)atoi(total_place);
       data_payload[2] = (uint8_t)atoi(total_free);
-      SendPayload(data_payload);
-      // Serial.println("Sending");
+      bool succ = SendPayload(data_payload);
+      if (succ) {
+        Serial.println("Success");
+      }
+      else {
+        Serial.println("Fail");
+      }
 
     }
     //  Serial.println("Refresh the payload");

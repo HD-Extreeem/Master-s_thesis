@@ -2,7 +2,7 @@
 #   TO RUN TYPE:                                                   |
 #   python smart_parking_v2.py
 # -----------------------------------------------------------------|
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 import cv2
 import numpy as np
 import time
@@ -18,7 +18,7 @@ import serial
 import math
 
 classes = None
-ser = serial.Serial('/dev/ttyACM1',9600,5)
+ser = serial.Serial('/dev/badgerboard',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 5
