@@ -18,7 +18,7 @@ import serial
 import math
 
 classes = None
-ser = serial.Serial('/dev/ttyACM1',9600,5)
+ser = serial.Serial('/dev/badgerboard',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 5
