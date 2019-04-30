@@ -17,9 +17,10 @@ import json
 import serial
 import math
 from scipy.spatial import distance
+from copy import deepcopy
 
 classes = None
-ser = serial.Serial('/dev/badgerboard',9600,5)
+#ser = serial.Serial('/dev/badgerboard',9600,5)
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 5
@@ -74,11 +75,15 @@ def put_coord(startX,endX,startY,endY,IoU,ID,state,p_time):
         json.dump(data, file)
 
 def put_coord_dbScan(boxes):
+    global min_distance
+    global nSamples
     with open('dbScan_coordinates.json', 'r') as f:
         data = json.load(f)
     coor_array=[]
     for element in boxes:
-        X1,X2,Y1,Y2,v_type = vehicle
+        print ("Vehicle box :")
+        print(element)
+        X1,X2,Y1,Y2,v_type = element
         if v_type != "motorcycle" and v_type != "bus":
             info = {
                 "startX": X1,
@@ -88,15 +93,16 @@ def put_coord_dbScan(boxes):
             }
             data["vehicles"].append(info)
             
-            coor_array.append( [np.average ( element[:2] ), np.average ( element[2:] ) ] )
+            coor_array.append( [np.average ( element[:2] ), np.average ( element[2:4] ) ] )
     distance_array = distance.cdist(coor_array, coor_array, 'euclidean')
     temp_min = 10000
     for elements in distance_array:
         for item in elements:
             if item > 0 and item <= temp_min:
-            temp_min = item
+                temp_min = item
     if min_distance > temp_min:
         min_distance = temp_min
+    print(min_distance)
     with open('dbScan_coordinates.json', 'w') as file:
         json.dump(data, file)
 
@@ -247,7 +253,7 @@ def compare_spots(p_boxes,v_boxes):
             put_boxes(p_boxes)
             print("New park space:", X1,X2,Y1,Y2)
             print("IoU is: ", IoU_max )
-        elif IoU_max > 0.80 and v_type != "motorcycle" and v_type != "bus" and dbscan_ready :
+        elif IoU_max > 0.80 and v_type != "motorcycle" and v_type != "bus" and dbscan_ready != True:
             print("Tar medelvärdet och uppdaterar, IoU is:", IoU_max)
             X1=(x1+X1)/2
             X2=(x2+X2)/2
@@ -370,6 +376,7 @@ while(True):
 #-------------------------------------
     print("Classifying with Yolov3")
     vehicle_boxes = yolo3_classify(image_yolo3, classes, COLORS)
+    vehicle_box_reserv = deepcopy(vehicle_boxes)
     if len(vehicle_boxes) > 0:
         print("Number of detected vehicle is: ", len(vehicle_boxes))
         while True:
@@ -384,7 +391,7 @@ while(True):
                 vehicle_boxes = vehicle_boxes2
         if len(park_boxes) == 0:
             print("This is new program put every box as a parking space")
-            park_boxes = copy(vehicle_boxes)
+            park_boxes = deepcopy(vehicle_boxes)
             put_boxes(park_boxes)
         else:
             print("Comparing the spots")
@@ -411,11 +418,11 @@ while(True):
     if(free_spaces != new_free_spaces):
        lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
        print(lora_message)
-       ser.write(lora_message.encode())
-       str1=ser.readline()
-       print(str1)
+       #ser.write(lora_message.encode())
+       #str1=ser.readline()
+       #print(str1)
        free_spaces = new_free_spaces
-       put_coord_dbScan(vehicle_boxes)
+       put_coord_dbScan(vehicle_box_reserv)
        nSamples += 1
     vehicle_boxes.clear()
 
