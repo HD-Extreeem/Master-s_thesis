@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------|
 #   TO RUN TYPE:                                                   |
-#   python smart_parking_v2.py
+#   python smart_parking_v5.py
 # -----------------------------------------------------------------|
 # -*- coding: utf-8 -*-
 import cv2
@@ -18,6 +18,11 @@ import serial
 import math
 from scipy.spatial import distance
 from copy import deepcopy
+import matplotlib.pyplot as plt
+from sklearn import cluster, datasets
+from sklearn.neighbors import kneighbors_graph
+from sklearn.preprocessing import StandardScaler
+from sklearn import metrics
 
 classes = None
 #ser = serial.Serial('/dev/badgerboard',9600,5)
@@ -26,7 +31,7 @@ ID = 1
 interval = 5
 dbscan_ready=False
 min_distance = 10000
-nSamples = 0
+nSamples = 98
 free_spaces = -1
 vehicle_boxes=[]
 park_boxes=[]
@@ -74,6 +79,62 @@ def put_coord(startX,endX,startY,endY,IoU,ID,state,p_time):
     with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
+def cluster_parking ():
+    global min_distance
+    p_boxes = []
+    with open('dbScan_coordinates.json', 'r') as f:
+        data = json.load(f)
+    slot_box =[]
+    dataset=[]
+    for element in data["vehicles"]:
+        slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"]])
+        dataset.append([int(np.average([element["startX"],element["endX"]])),int(np.average([element["startY"],element["endY"]]))])
+    new_array = np.array(dataset), None
+    X, y = new_array
+    dbscan = cluster.DBSCAN(eps=(min_distance*0.8),min_samples = 3).fit(X)
+    labels = dbscan.labels_
+    core_samples_mask = np.zeros_like(labels, dtype=bool)
+    core_samples_mask[dbscan.core_sample_indices_] = True
+
+    n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
+    n_noise_ = list(labels).count(-1)
+    print('Estimated number of clusters: %d' % n_clusters_)
+    print('Estimated number of noise points: %d' % n_noise_)
+    print(labels)
+    for i in range(len(slot_box)):
+        if labels[i] != -1:
+            X1,X2,Y1,Y2 = slot_box[i]
+            if p_boxes[labels[i]]:
+                x1,x2,y1,y2 = p_boxes[labels[i]]
+                p_boxes.insert(labels[i],[X1+x1,X2+x2,Y1+y1,Y2+y2])
+            else:
+                p_boxes[labels[i]] = slot_box[i]
+   
+  
+    
+    unique_labels = set(labels)
+    colors = [plt.cm.Spectral(each)
+            for each in np.linspace(0, 1, len(unique_labels))]
+    for k, col in zip(unique_labels, colors):
+        if k == -1:
+            # Black used for noise.
+            col = [0, 0, 0, 1]
+
+        class_member_mask = (labels == k)
+
+        xy = X[class_member_mask & core_samples_mask]
+        plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col),
+                markeredgecolor='k', markersize=14)
+
+        xy = X[class_member_mask & ~core_samples_mask]
+        plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col),
+                markeredgecolor='k', markersize=6)
+
+    plt.title('Estimated number of clusters: %d' % n_clusters_)
+    plt.show() 
+    return p_boxes
+
+
 def put_coord_dbScan(boxes):
     global min_distance
     global nSamples
@@ -120,14 +181,7 @@ def put_boxes (boxes):
         
         put_coord( i[0], i[1], i[2], i[3], i[4], i[5], i[6], i[7])
 
-def clear_boxes(boxes):
-    park_boxes = []
 
-    for i in boxes:
-        if(i[7]<time_thresh):
-            park_boxes.append(i)
-
-    put_boxes(park_boxes)
 
 def sort_parking_id(boxes):
     
@@ -246,7 +300,7 @@ def compare_spots(p_boxes,v_boxes):
                x1,x2,y1,y2,temp_iou,Id,state,p_time = park
     
         X1,X2,Y1,Y2,v_type = vehicle
-        if IoU_max < (temp_iou + 0.20):
+        if IoU_max < (temp_iou + 0.20) and dbscan_ready != True:
             print("Temp IoU = ",temp_iou)
             print("Lägger till en ny p_plats")
             p_boxes.append([X1,X2,Y1,Y2])
@@ -414,7 +468,7 @@ while(True):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     
-    print(park_boxes)
+    #print(park_boxes)
     if(free_spaces != new_free_spaces):
        lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
        print(lora_message)
@@ -425,4 +479,7 @@ while(True):
        put_coord_dbScan(vehicle_box_reserv)
        nSamples += 1
     vehicle_boxes.clear()
-
+    if nSamples >= 100:
+        park_boxes = cluster_parking()
+        nSamples = 0
+        dbscan_ready = True
