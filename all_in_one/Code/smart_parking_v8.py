@@ -96,7 +96,8 @@ def cluster_parking ():
     #dataset.append([int(np.average([3173,3705])),int(np.average([1077,1465]))])
     new_array = np.array(dataset), None
     X, y = new_array
-    dbscan = cluster.DBSCAN(eps=(min_distance*0.4),min_samples = 7).fit(X)
+    dbscan = cluster.DBSCAN(eps=(min_distance*0.5),min_samples = 7).fit(X)
+    print("XXXXXXXXXX : " , min_distance)
     labels = dbscan.labels_
     core_samples_mask = np.zeros_like(labels, dtype=bool)
     core_samples_mask[dbscan.core_sample_indices_] = True
@@ -117,7 +118,7 @@ def cluster_parking ():
                 new_slot_box.append(slot_box[i])
             else:
                 p_boxes[labels[i]] = slot_box[i]
-    refresh_coord_dbScan(new_slot_box)
+    #refresh_coord_dbScan(new_slot_box)
     new_labels = labels.tolist()
     #print(new_labels)
     for j in range(n_clusters_):
@@ -125,6 +126,7 @@ def cluster_parking ():
         x1,x2,y1,y2 = p_boxes[j]
         p_boxes[j] = [int(x1/num),int(x2/num),int(y1/num),int(y2/num)]
     put_boxes(p_boxes)
+    refresh_coord_dbScan(p_boxes)
     p_boxes.clear()
     slot_box.clear()
   
@@ -157,14 +159,18 @@ def refresh_coord_dbScan(boxes):
     for element in boxes:
         #print ("Vehicle box :")
         #print(element)
-        X1,X2,Y1,Y2 = element
+        X1 =int(element[0])
+        X2 =int(element[1])
+        Y1 =int(element[2])
+        Y2 =int(element[3])
         info = {
             "startX": X1,
             "endX"  : X2,
             "startY": Y1,
             "endY"  : Y2
         }
-        data["vehicles"].append(info)
+        for i in range(7):
+            data["vehicles"].append(info)
     with open('dbScan_coordinates.json', 'w') as file:
         json.dump(data, file)
 

@@ -29,7 +29,7 @@ classes = None
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 20
-dbscan_ready=False
+dbscan_ready=True
 min_distance = 10000
 nSamples = 0
 free_spaces = -1
@@ -38,12 +38,16 @@ park_boxes=[]
 classify_treshold = 0.3
 time_thresh = 1200 # = 20 min
 
-image1 = cv2.imread("../Image/1.png")
-image2 = cv2.imread("../Image/2.png")
-image3 = cv2.imread("../Image/3.png")
-image4 = cv2.imread("../Image/4.png")
-image5 = cv2.imread("../Image/5.png")
-image6 = cv2.imread("../Image/6.png")
+image1 = cv2.imread("../Image/image1.jpg")
+image2 = cv2.imread("../Image/image2.jpg")
+image3 = cv2.imread("../Image/image3.jpg")
+image4 = cv2.imread("../Image/image4.jpg")
+image5 = cv2.imread("../Image/image5.jpg")
+image6 = cv2.imread("../Image/image6.jpg")
+image7 = cv2.imread("../Image/image7.jpg")
+image8 = cv2.imread("../Image/image8.jpg")
+image9 = cv2.imread("../Image/image9.jpg")
+image10 = cv2.imread("../Image/image10.jpg")
 #image6 = cv2.imread("../Image/park_stor.jpg")
 #image7 = cv2.imread("../Image/park_cnr.png")
 
@@ -96,7 +100,7 @@ def cluster_parking ():
     #dataset.append([int(np.average([3173,3705])),int(np.average([1077,1465]))])
     new_array = np.array(dataset), None
     X, y = new_array
-    dbscan = cluster.DBSCAN(eps=(min_distance*0.4),min_samples = 7).fit(X)
+    dbscan = cluster.DBSCAN(eps=(min_distance*0.6),min_samples = 7).fit(X)
     labels = dbscan.labels_
     core_samples_mask = np.zeros_like(labels, dtype=bool)
     core_samples_mask[dbscan.core_sample_indices_] = True
@@ -462,16 +466,16 @@ def yolo3_classify(image_yolo, classes, COLORS):
 print("Program starts")
 
 while(True):
-    #try:
-    #    x = int(input("Enter the image number from 1-7...")) #integer input
-    #except ValueError:
-    #    x=1
-    #if(x<1 or x>7):
-    #    print("Value out of bounds, choses img 1 instead")
-    #    x=1
+    try:
+        x = int(input("Enter the image number from 1-7...")) #integer input
+    except ValueError:
+        x=1
+    if(x<1 or x>7):
+        print("Value out of bounds, choses img 1 instead")
+        x=1
 
-    #image_yolo3 = copy(vars()["image"+str(x)])
-    image_yolo3 = get_cam_img()
+    image_yolo3 = copy(vars()["image"+str(x)])
+    #image_yolo3 = get_cam_img()
     test_image = image_yolo3.copy()
 
     start = time.time()
@@ -539,7 +543,7 @@ while(True):
         put_coord_dbScan(vehicle_box_reserv)
         nSamples += 1
     vehicle_boxes.clear()
-    if nSamples >= 2:
+    if nSamples >= 140:
         cluster_parking()
         park_boxes = load_coord()
         for box in park_boxes:

@@ -44,7 +44,7 @@ image3 = cv2.imread("../Image/3.png")
 image4 = cv2.imread("../Image/4.png")
 image5 = cv2.imread("../Image/5.png")
 image6 = cv2.imread("../Image/6.png")
-#image6 = cv2.imread("../Image/park_stor.jpg")
+image6 = cv2.imread("../Image/park_stor.jpg")
 #image7 = cv2.imread("../Image/park_cnr.png")
 
 last_time = time.time()
@@ -298,12 +298,13 @@ def calculate_free_spots(image,p_boxes,v_boxes):
             x2 =int(vehicle[1])
             y1 =int(vehicle[2])
             y2 =int(vehicle[3])
+            v_type = vehicle[4]
             IoU_max = 0
             num_IoU =0
             for slot in p_boxes:
                 IoU_temp = slot[4]
                 IoU = calculate_IoU(slot,vehicle)
-                if IoU > slot[4]+0.10:
+                if IoU > slot[4]+0.10 and  v_type == "car":
                     num_IoU += 1
             if (num_IoU > 1):
                 cv2.rectangle(image,(x1,y1),(x2,y2),(255,165,0),10)

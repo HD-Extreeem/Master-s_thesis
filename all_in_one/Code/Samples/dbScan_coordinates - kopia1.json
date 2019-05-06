@@ -1,0 +1,7012 @@
+{
+  "vehicles": [
+    {
+      "startX": 1345.0,
+      "endX": 1525.0,
+      "startY": 33.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1293.0,
+      "startY": 25.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1691.5,
+      "endX": 1902.5,
+      "startY": 210.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 2.0,
+      "endX": 216.0,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1522.5,
+      "startY": 35.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1292.5,
+      "startY": 27.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1903.5,
+      "startY": 209.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 3.0,
+      "endX": 215.0,
+      "startY": 213.0,
+      "endY": 385.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1523.5,
+      "startY": 34.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1291.5,
+      "startY": 28.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1903.5,
+      "startY": 211.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 3.0,
+      "endX": 215.0,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1523.5,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1292.0,
+      "startY": 26.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1686.5,
+      "endX": 1905.5,
+      "startY": 210.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 6.0,
+      "endX": 216.0,
+      "startY": 213.0,
+      "endY": 387.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1522.5,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1293.5,
+      "startY": 27.5,
+      "endY": 174.5
+    },
+    {
+      "startX": 1684.0,
+      "endX": 1906.0,
+      "startY": 210.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 5.0,
+      "endX": 213.0,
+      "startY": 213.0,
+      "endY": 387.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1525.0,
+      "startY": 31.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1292.5,
+      "startY": 25.5,
+      "endY": 174.5
+    },
+    {
+      "startX": 1689.5,
+      "endX": 1906.5,
+      "startY": 210.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 3.0,
+      "endX": 215.0,
+      "startY": 212.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1523.0,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 28.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1903.5,
+      "startY": 211.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 6.0,
+      "endX": 212.0,
+      "startY": 214.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1523.0,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1293.0,
+      "startY": 27.5,
+      "endY": 174.5
+    },
+    {
+      "startX": 1689.5,
+      "endX": 1906.5,
+      "startY": 213.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 2.0,
+      "endX": 214.0,
+      "startY": 213.0,
+      "endY": 385.0
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1522.5,
+      "startY": 33.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1291.0,
+      "startY": 25.5,
+      "endY": 174.5
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1904.0,
+      "startY": 213.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 3.0,
+      "endX": 213.0,
+      "startY": 212.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1523.5,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1292.0,
+      "startY": 26.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1687.0,
+      "endX": 1903.0,
+      "startY": 213.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 4.0,
+      "endX": 216.0,
+      "startY": 214.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1524.5,
+      "startY": 35.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1292.0,
+      "startY": 26.0,
+      "endY": 176.0
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1906.0,
+      "startY": 213.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 3.5,
+      "endX": 212.5,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1524.0,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1293.5,
+      "startY": 27.0,
+      "endY": 173.0
+    },
+    {
+      "startX": 1689.0,
+      "endX": 1905.0,
+      "startY": 213.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 4.5,
+      "endX": 211.5,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1521.5,
+      "startY": 37.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1291.0,
+      "startY": 28.5,
+      "endY": 175.5
+    },
+    {
+      "startX": 1688.0,
+      "endX": 1906.0,
+      "startY": 213.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 2.5,
+      "endX": 213.5,
+      "startY": 214.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1527.0,
+      "startY": 37.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1294.0,
+      "startY": 28.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1691.5,
+      "endX": 1906.5,
+      "startY": 212.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 2.5,
+      "endX": 213.5,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1524.0,
+      "startY": 37.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 27.5,
+      "endY": 176.5
+    },
+    {
+      "startX": 1691.0,
+      "endX": 1907.0,
+      "startY": 212.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 5.0,
+      "endX": 215.0,
+      "startY": 216.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1526.5,
+      "startY": 37.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 27.0,
+      "endY": 175.0
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1907.5,
+      "startY": 213.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 3.5,
+      "endX": 216.5,
+      "startY": 214.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1525.0,
+      "startY": 38.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1293.0,
+      "startY": 27.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1907.5,
+      "startY": 209.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1525.5,
+      "startY": 35.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1293.5,
+      "startY": 27.0,
+      "endY": 173.0
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1905.5,
+      "startY": 210.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 6.5,
+      "endX": 211.5,
+      "startY": 215.0,
+      "endY": 387.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1524.0,
+      "startY": 38.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1292.0,
+      "startY": 28.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1893.0,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1526.0,
+      "startY": 34.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1121.5,
+      "endX": 1290.5,
+      "startY": 24.5,
+      "endY": 179.5
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1893.0,
+      "startY": 205.0,
+      "endY": 353.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1523.5,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1292.0,
+      "startY": 26.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1906.0,
+      "startY": 209.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1523.5,
+      "startY": 34.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1291.0,
+      "startY": 24.0,
+      "endY": 174.0
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1906.5,
+      "startY": 211.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1353.0,
+      "endX": 1523.0,
+      "startY": 37.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1289.5,
+      "startY": 28.0,
+      "endY": 180.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1893.5,
+      "startY": 205.5,
+      "endY": 352.5
+    },
+    {
+      "startX": 9.5,
+      "endX": 216.5,
+      "startY": 215.0,
+      "endY": 389.0
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1521.5,
+      "startY": 37.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1122.5,
+      "endX": 1289.5,
+      "startY": 29.5,
+      "endY": 180.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1896.5,
+      "startY": 204.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 9.0,
+      "endX": 217.0,
+      "startY": 214.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1356.0,
+      "endX": 1522.0,
+      "startY": 39.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1124.5,
+      "endX": 1287.5,
+      "startY": 30.5,
+      "endY": 181.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1896.5,
+      "startY": 206.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 10.5,
+      "endX": 217.5,
+      "startY": 213.5,
+      "endY": 390.5
+    },
+    {
+      "startX": 1360.0,
+      "endX": 1518.0,
+      "startY": 40.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1122.5,
+      "endX": 1291.5,
+      "startY": 33.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1690.5,
+      "endX": 1907.5,
+      "startY": 208.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 11.0,
+      "endX": 217.0,
+      "startY": 213.0,
+      "endY": 389.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1526.5,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1122.5,
+      "endX": 1291.5,
+      "startY": 30.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1896.0,
+      "startY": 203.5,
+      "endY": 352.5
+    },
+    {
+      "startX": 10.0,
+      "endX": 216.0,
+      "startY": 212.5,
+      "endY": 387.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1525.5,
+      "startY": 32.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1123.5,
+      "endX": 1290.5,
+      "startY": 30.0,
+      "endY": 176.0
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1907.5,
+      "startY": 206.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 11.0,
+      "endX": 219.0,
+      "startY": 212.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 35.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1123.5,
+      "endX": 1290.5,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1898.0,
+      "startY": 205.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 7.0,
+      "endX": 217.0,
+      "startY": 211.5,
+      "endY": 388.5
+    },
+    {
+      "startX": 1121.0,
+      "endX": 1291.0,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1525.0,
+      "startY": 36.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1690.5,
+      "endX": 1907.5,
+      "startY": 207.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 8.5,
+      "endX": 215.5,
+      "startY": 213.0,
+      "endY": 389.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 36.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1121.5,
+      "endX": 1290.5,
+      "startY": 30.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1894.5,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 10.5,
+      "endX": 221.5,
+      "startY": 213.0,
+      "endY": 389.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1527.0,
+      "startY": 36.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1121.0,
+      "endX": 1291.0,
+      "startY": 31.0,
+      "endY": 181.0
+    },
+    {
+      "startX": 1688.0,
+      "endX": 1902.0,
+      "startY": 209.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 12.0,
+      "endX": 218.0,
+      "startY": 213.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1353.0,
+      "endX": 1527.0,
+      "startY": 38.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1122.0,
+      "endX": 1292.0,
+      "startY": 32.0,
+      "endY": 174.0
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1894.5,
+      "startY": 205.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1524.5,
+      "startY": 35.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1122.5,
+      "endX": 1287.5,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1685.0,
+      "endX": 1903.0,
+      "startY": 209.0,
+      "endY": 341.0
+    },
+    {
+      "startX": 6.5,
+      "endX": 219.5,
+      "startY": 212.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1353.5,
+      "endX": 1518.5,
+      "startY": 37.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1121.5,
+      "endX": 1292.5,
+      "startY": 30.5,
+      "endY": 175.5
+    },
+    {
+      "startX": 1687.0,
+      "endX": 1905.0,
+      "startY": 208.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 7.0,
+      "endX": 215.0,
+      "startY": 213.0,
+      "endY": 389.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1523.5,
+      "startY": 34.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1121.5,
+      "endX": 1294.5,
+      "startY": 25.5,
+      "endY": 176.5
+    },
+    {
+      "startX": 1685.5,
+      "endX": 1902.5,
+      "startY": 209.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 6.5,
+      "endX": 215.5,
+      "startY": 213.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1290.5,
+      "startY": 29.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1524.5,
+      "startY": 31.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1679.5,
+      "endX": 1902.5,
+      "startY": 207.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 4.0,
+      "endX": 216.0,
+      "startY": 213.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1293.0,
+      "startY": 27.5,
+      "endY": 176.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1527.0,
+      "startY": 32.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1684.5,
+      "endX": 1901.5,
+      "startY": 206.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 2.5,
+      "endX": 217.5,
+      "startY": 214.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1292.5,
+      "startY": 26.5,
+      "endY": 179.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1530.5,
+      "startY": 31.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1685.5,
+      "endX": 1898.5,
+      "startY": 208.0,
+      "endY": 342.0
+    },
+    {
+      "startX": 4.5,
+      "endX": 213.5,
+      "startY": 212.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 27.0,
+      "endY": 175.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 31.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1686.0,
+      "endX": 1902.0,
+      "startY": 207.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 2.5,
+      "endX": 219.5,
+      "startY": 214.5,
+      "endY": 387.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1292.0,
+      "startY": 28.0,
+      "endY": 174.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1523.5,
+      "startY": 34.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1690.5,
+      "endX": 1903.5,
+      "startY": 209.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 4.0,
+      "endX": 218.0,
+      "startY": 214.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1292.0,
+      "startY": 27.0,
+      "endY": 173.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1897.5,
+      "startY": 203.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1.0,
+      "endX": 217.0,
+      "startY": 213.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1292.5,
+      "startY": 25.0,
+      "endY": 175.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1516.0,
+      "startY": 35.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1714.0,
+      "endX": 1894.0,
+      "startY": 205.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 0.5,
+      "endX": 217.5,
+      "startY": 214.5,
+      "endY": 387.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1527.0,
+      "startY": 36.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1295.5,
+      "startY": 28.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1705.5,
+      "endX": 1892.5,
+      "startY": 204.5,
+      "endY": 347.5
+    },
+    {
+      "startX": -2.5,
+      "endX": 216.5,
+      "startY": 214.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1524.0,
+      "startY": 38.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1295.0,
+      "startY": 23.5,
+      "endY": 174.5
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1889.0,
+      "startY": 207.0,
+      "endY": 345.0
+    },
+    {
+      "startX": -0.5,
+      "endX": 218.5,
+      "startY": 214.0,
+      "endY": 388.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1294.0,
+      "startY": 27.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1525.0,
+      "startY": 32.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 4.5,
+      "endX": 217.5,
+      "startY": 213.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1686.0,
+      "endX": 1902.0,
+      "startY": 208.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1291.5,
+      "startY": 27.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1530.0,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1687.5,
+      "endX": 1904.5,
+      "startY": 209.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1.5,
+      "endX": 216.5,
+      "startY": 213.0,
+      "endY": 387.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1526.5,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1292.0,
+      "startY": 28.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1903.5,
+      "startY": 207.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1.0,
+      "endX": 217.0,
+      "startY": 212.0,
+      "endY": 386.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1526.0,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1292.5,
+      "startY": 28.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1689.0,
+      "endX": 1903.0,
+      "startY": 208.0,
+      "endY": 342.0
+    },
+    {
+      "startX": 3.5,
+      "endX": 216.5,
+      "startY": 211.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1525.0,
+      "startY": 31.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1294.0,
+      "startY": 27.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1904.0,
+      "startY": 207.0,
+      "endY": 341.0
+    },
+    {
+      "startX": 4.5,
+      "endX": 217.5,
+      "startY": 212.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1525.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1296.0,
+      "startY": 30.5,
+      "endY": 175.5
+    },
+    {
+      "startX": 1691.5,
+      "endX": 1904.5,
+      "startY": 210.5,
+      "endY": 341.5
+    },
+    {
+      "startX": 4.5,
+      "endX": 217.5,
+      "startY": 211.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1525.0,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1293.0,
+      "startY": 27.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1906.0,
+      "startY": 209.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 2.5,
+      "endX": 217.5,
+      "startY": 211.5,
+      "endY": 386.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1291.5,
+      "startY": 29.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1524.5,
+      "startY": 32.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1689.5,
+      "endX": 1906.5,
+      "startY": 209.0,
+      "endY": 341.0
+    },
+    {
+      "startX": 2.5,
+      "endX": 219.5,
+      "startY": 212.5,
+      "endY": 387.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1524.0,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1294.0,
+      "startY": 25.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1685.5,
+      "endX": 1904.5,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1526.0,
+      "startY": 31.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1292.5,
+      "startY": 26.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1687.0,
+      "endX": 1905.0,
+      "startY": 209.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1526.0,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1292.5,
+      "startY": 25.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1687.0,
+      "endX": 1903.0,
+      "startY": 209.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1295.0,
+      "startY": 25.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1526.0,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1687.0,
+      "endX": 1903.0,
+      "startY": 207.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1526.0,
+      "startY": 32.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1294.5,
+      "startY": 24.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1705.5,
+      "endX": 1894.5,
+      "startY": 204.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1524.0,
+      "startY": 35.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1292.0,
+      "startY": 24.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1898.5,
+      "startY": 204.5,
+      "endY": 351.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1525.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1294.5,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1688.5,
+      "endX": 1905.5,
+      "startY": 207.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1528.5,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1292.0,
+      "startY": 21.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1684.0,
+      "endX": 1906.0,
+      "startY": 206.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1522.0,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1295.0,
+      "startY": 24.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1684.5,
+      "endX": 1903.5,
+      "startY": 208.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1292.5,
+      "startY": 25.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1526.0,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1683.5,
+      "endX": 1904.5,
+      "startY": 206.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1295.5,
+      "startY": 25.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1526.5,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1683.0,
+      "endX": 1905.0,
+      "startY": 206.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1295.0,
+      "startY": 26.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1526.0,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1685.5,
+      "endX": 1908.5,
+      "startY": 206.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1526.5,
+      "startY": 32.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1291.5,
+      "startY": 32.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1894.0,
+      "startY": 204.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1108.0,
+      "endX": 1294.0,
+      "startY": 26.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1524.5,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1897.5,
+      "startY": 204.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1295.0,
+      "startY": 27.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1525.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1895.5,
+      "startY": 204.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1294.5,
+      "startY": 28.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1529.0,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1899.5,
+      "startY": 204.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1293.5,
+      "startY": 27.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1526.0,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1894.5,
+      "startY": 205.0,
+      "endY": 353.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1527.5,
+      "startY": 35.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1293.5,
+      "startY": 30.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1897.0,
+      "startY": 206.5,
+      "endY": 351.5
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1292.0,
+      "startY": 27.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1528.0,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1710.0,
+      "endX": 1894.0,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1293.0,
+      "startY": 28.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1529.0,
+      "startY": 32.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1897.0,
+      "startY": 205.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1291.5,
+      "startY": 25.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1530.0,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1710.0,
+      "endX": 1892.0,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1532.0,
+      "startY": 27.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1123.5,
+      "endX": 1290.5,
+      "startY": 27.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1888.5,
+      "startY": 207.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1291.5,
+      "startY": 25.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1530.0,
+      "startY": 29.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1892.5,
+      "startY": 206.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1291.5,
+      "startY": 26.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1531.5,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1689.5,
+      "endX": 1902.5,
+      "startY": 209.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1293.5,
+      "startY": 26.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1530.5,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1890.5,
+      "startY": 205.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1290.0,
+      "startY": 26.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1529.5,
+      "startY": 32.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1891.0,
+      "startY": 205.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1291.5,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1528.5,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1893.5,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 27.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1529.0,
+      "startY": 27.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1893.0,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1528.0,
+      "startY": 32.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1893.5,
+      "startY": 207.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1295.0,
+      "startY": 24.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1354.0,
+      "endX": 1526.0,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1895.5,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1292.5,
+      "startY": 25.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1529.5,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1713.5,
+      "endX": 1894.5,
+      "startY": 205.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 25.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1530.0,
+      "startY": 29.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1895.0,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 24.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1527.5,
+      "startY": 28.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1894.5,
+      "startY": 205.5,
+      "endY": 350.5
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1290.5,
+      "startY": 28.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1527.5,
+      "startY": 32.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1896.0,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1527.5,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1711.5,
+      "endX": 1896.5,
+      "startY": 207.5,
+      "endY": 350.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1293.0,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1529.5,
+      "startY": 27.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1897.0,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1291.5,
+      "startY": 25.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1528.5,
+      "startY": 29.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1893.5,
+      "startY": 206.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 28.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1525.5,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1893.0,
+      "startY": 206.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1289.5,
+      "startY": 27.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1527.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1893.5,
+      "startY": 206.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1290.5,
+      "startY": 28.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1528.5,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1893.5,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1290.0,
+      "startY": 28.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1528.5,
+      "startY": 31.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1696.5,
+      "endX": 1905.5,
+      "startY": 210.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1292.5,
+      "startY": 28.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1530.0,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1699.0,
+      "endX": 1905.0,
+      "startY": 210.5,
+      "endY": 341.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1291.5,
+      "startY": 27.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1527.0,
+      "startY": 30.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1700.5,
+      "endX": 1907.5,
+      "startY": 210.0,
+      "endY": 342.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1291.0,
+      "startY": 29.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1526.5,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1897.5,
+      "startY": 206.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1294.0,
+      "startY": 27.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1528.5,
+      "startY": 29.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1714.0,
+      "endX": 1900.0,
+      "startY": 208.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 28.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1352.0,
+      "endX": 1524.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1714.5,
+      "endX": 1897.5,
+      "startY": 207.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1292.0,
+      "startY": 26.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1527.5,
+      "startY": 36.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1711.5,
+      "endX": 1900.5,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1292.5,
+      "startY": 26.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1526.0,
+      "startY": 32.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1907.0,
+      "startY": 208.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1527.5,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1290.5,
+      "startY": 30.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1698.5,
+      "endX": 1905.5,
+      "startY": 209.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1697.0,
+      "endX": 1907.0,
+      "startY": 209.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1292.0,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1524.5,
+      "startY": 35.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1907.0,
+      "startY": 210.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1291.0,
+      "startY": 24.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1525.0,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1699.5,
+      "endX": 1908.5,
+      "startY": 210.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1293.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1524.5,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1714.0,
+      "endX": 1902.0,
+      "startY": 207.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1290.5,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1899.0,
+      "startY": 206.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1525.0,
+      "startY": 32.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1294.0,
+      "startY": 25.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1524.5,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1897.0,
+      "startY": 207.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1294.0,
+      "startY": 23.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1528.5,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1907.0,
+      "startY": 209.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1295.0,
+      "startY": 23.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1527.5,
+      "startY": 28.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1698.0,
+      "endX": 1908.0,
+      "startY": 209.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1297.5,
+      "startY": 23.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1530.0,
+      "startY": 27.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1698.0,
+      "endX": 1908.0,
+      "startY": 210.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1297.0,
+      "startY": 23.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1529.0,
+      "startY": 28.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1894.0,
+      "startY": 206.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1294.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1529.0,
+      "startY": 29.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1697.5,
+      "endX": 1906.5,
+      "startY": 211.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1292.5,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1528.0,
+      "startY": 29.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1908.5,
+      "startY": 207.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1292.0,
+      "startY": 23.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1532.5,
+      "startY": 30.0,
+      "endY": 176.0
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1908.0,
+      "startY": 205.5,
+      "endY": 350.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1529.5,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1288.0,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1903.0,
+      "startY": 204.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1525.5,
+      "startY": 30.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1289.0,
+      "startY": 24.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1907.5,
+      "startY": 208.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1288.0,
+      "startY": 26.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1527.5,
+      "startY": 29.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1716.0,
+      "endX": 1902.0,
+      "startY": 208.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1289.0,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1529.0,
+      "startY": 26.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1907.5,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1289.0,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1528.0,
+      "startY": 29.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1907.5,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1288.0,
+      "startY": 25.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1527.5,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1243.5,
+      "endX": 1424.5,
+      "startY": 189.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1909.5,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1292.0,
+      "startY": 23.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1528.5,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1243.5,
+      "endX": 1422.5,
+      "startY": 170.5,
+      "endY": 363.5
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1909.5,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1289.5,
+      "startY": 24.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1526.0,
+      "startY": 30.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1246.5,
+      "endX": 1421.5,
+      "startY": 170.0,
+      "endY": 364.0
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1908.0,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1289.0,
+      "startY": 27.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1531.0,
+      "startY": 30.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1246.5,
+      "endX": 1421.5,
+      "startY": 176.0,
+      "endY": 366.0
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1909.0,
+      "startY": 207.5,
+      "endY": 350.5
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1289.5,
+      "startY": 24.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1527.5,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1248.0,
+      "endX": 1422.0,
+      "startY": 182.5,
+      "endY": 365.5
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1910.5,
+      "startY": 207.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1290.0,
+      "startY": 27.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1521.5,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1691.5,
+      "endX": 1910.5,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1417.5,
+      "startY": 181.0,
+      "endY": 369.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1527.0,
+      "startY": 35.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1287.0,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1247.5,
+      "endX": 1422.5,
+      "startY": 182.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1696.0,
+      "endX": 1908.0,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1289.0,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1525.0,
+      "startY": 32.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1253.5,
+      "endX": 1420.5,
+      "startY": 231.0,
+      "endY": 371.0
+    },
+    {
+      "startX": 1696.5,
+      "endX": 1907.5,
+      "startY": 208.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1253.0,
+      "endX": 1413.0,
+      "startY": 134.5,
+      "endY": 259.5
+    },
+    {
+      "startX": 1110.0,
+      "endX": 1288.0,
+      "startY": 26.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1528.5,
+      "startY": 29.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1698.0,
+      "endX": 1910.0,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1245.0,
+      "endX": 1423.0,
+      "startY": 163.0,
+      "endY": 371.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1527.0,
+      "startY": 32.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1285.5,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1247.0,
+      "endX": 1423.0,
+      "startY": 183.0,
+      "endY": 363.0
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1909.5,
+      "startY": 207.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1527.0,
+      "startY": 33.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1287.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1246.0,
+      "endX": 1422.0,
+      "startY": 169.5,
+      "endY": 366.5
+    },
+    {
+      "startX": 1700.0,
+      "endX": 1910.0,
+      "startY": 207.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1525.0,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1289.0,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1249.0,
+      "endX": 1419.0,
+      "startY": 172.0,
+      "endY": 364.0
+    },
+    {
+      "startX": 1697.0,
+      "endX": 1907.0,
+      "startY": 207.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 1352.0,
+      "endX": 1524.0,
+      "startY": 37.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1287.5,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1246.5,
+      "endX": 1421.5,
+      "startY": 175.5,
+      "endY": 366.5
+    },
+    {
+      "startX": 1715.5,
+      "endX": 1902.5,
+      "startY": 206.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1289.0,
+      "startY": 26.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1421.5,
+      "startY": 177.0,
+      "endY": 363.0
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1528.5,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1716.0,
+      "endX": 1902.0,
+      "startY": 204.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1288.0,
+      "startY": 26.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1528.5,
+      "startY": 35.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1247.0,
+      "endX": 1421.0,
+      "startY": 181.0,
+      "endY": 363.0
+    },
+    {
+      "startX": 1716.5,
+      "endX": 1903.5,
+      "startY": 205.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1287.0,
+      "startY": 26.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1528.5,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1258.0,
+      "endX": 1420.0,
+      "startY": 231.0,
+      "endY": 373.0
+    },
+    {
+      "startX": 1714.0,
+      "endX": 1902.0,
+      "startY": 205.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1253.0,
+      "endX": 1411.0,
+      "startY": 132.0,
+      "endY": 254.0
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1288.5,
+      "startY": 27.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1249.0,
+      "endX": 1425.0,
+      "startY": 181.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1528.0,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1715.5,
+      "endX": 1902.5,
+      "startY": 204.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1252.0,
+      "endX": 1418.0,
+      "startY": 201.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1287.5,
+      "startY": 28.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1714.5,
+      "endX": 1899.5,
+      "startY": 205.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1529.5,
+      "startY": 31.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1286.5,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1527.5,
+      "startY": 33.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1252.0,
+      "endX": 1418.0,
+      "startY": 200.0,
+      "endY": 364.0
+    },
+    {
+      "startX": 1716.5,
+      "endX": 1901.5,
+      "startY": 206.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1287.0,
+      "startY": 28.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1249.5,
+      "endX": 1422.5,
+      "startY": 200.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1526.5,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1716.5,
+      "endX": 1903.5,
+      "startY": 205.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1288.5,
+      "startY": 27.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1249.5,
+      "endX": 1418.5,
+      "startY": 204.0,
+      "endY": 356.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1525.0,
+      "startY": 34.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1716.5,
+      "endX": 1903.5,
+      "startY": 207.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1288.5,
+      "startY": 26.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1246.0,
+      "endX": 1424.0,
+      "startY": 198.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1527.5,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1717.0,
+      "endX": 1907.0,
+      "startY": 206.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1284.5,
+      "startY": 27.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1254.5,
+      "endX": 1415.5,
+      "startY": 203.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1527.5,
+      "startY": 33.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1713.5,
+      "endX": 1900.5,
+      "startY": 205.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1285.5,
+      "startY": 26.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1528.0,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1250.0,
+      "endX": 1420.0,
+      "startY": 197.5,
+      "endY": 354.5
+    },
+    {
+      "startX": 1714.5,
+      "endX": 1903.5,
+      "startY": 204.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1291.0,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1530.5,
+      "startY": 28.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1248.0,
+      "endX": 1422.0,
+      "startY": 200.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1713.5,
+      "endX": 1906.5,
+      "startY": 204.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1291.0,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1530.0,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1421.5,
+      "startY": 204.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1907.5,
+      "startY": 205.5,
+      "endY": 354.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1289.0,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1528.5,
+      "startY": 31.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1248.0,
+      "endX": 1422.0,
+      "startY": 204.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1710.0,
+      "endX": 1906.0,
+      "startY": 204.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1289.0,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1528.0,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1246.5,
+      "endX": 1423.5,
+      "startY": 202.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1905.5,
+      "startY": 206.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1285.5,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1528.0,
+      "startY": 29.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1250.5,
+      "endX": 1419.5,
+      "startY": 200.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1286.0,
+      "startY": 28.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1248.0,
+      "endX": 1422.0,
+      "startY": 202.0,
+      "endY": 356.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1530.5,
+      "startY": 29.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1909.0,
+      "startY": 201.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1287.5,
+      "startY": 29.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1527.5,
+      "startY": 33.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1423.5,
+      "startY": 194.0,
+      "endY": 356.0
+    },
+    {
+      "startX": 1714.5,
+      "endX": 1907.5,
+      "startY": 204.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1525.5,
+      "startY": 31.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1285.0,
+      "startY": 28.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1242.5,
+      "endX": 1429.5,
+      "startY": 185.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1899.5,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1245.5,
+      "endX": 1424.5,
+      "startY": 195.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1287.5,
+      "startY": 29.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1524.5,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1904.0,
+      "startY": 205.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1525.5,
+      "startY": 34.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1285.0,
+      "startY": 28.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1710.0,
+      "endX": 1900.0,
+      "startY": 205.5,
+      "endY": 352.5
+    },
+    {
+      "startX": 1241.0,
+      "endX": 1431.0,
+      "startY": 190.0,
+      "endY": 356.0
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1526.5,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1283.0,
+      "startY": 33.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1421.5,
+      "startY": 185.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1904.5,
+      "startY": 211.0,
+      "endY": 335.0
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1516.5,
+      "startY": 35.5,
+      "endY": 154.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1284.0,
+      "startY": 34.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1248.5,
+      "endX": 1427.5,
+      "startY": 201.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1698.5,
+      "endX": 1909.5,
+      "startY": 210.5,
+      "endY": 339.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1523.0,
+      "startY": 31.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1284.0,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1254.0,
+      "endX": 1422.0,
+      "startY": 199.0,
+      "endY": 365.0
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1906.5,
+      "startY": 209.0,
+      "endY": 337.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1524.0,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1283.0,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1254.5,
+      "endX": 1419.5,
+      "startY": 199.5,
+      "endY": 364.5
+    },
+    {
+      "startX": 1694.0,
+      "endX": 1906.0,
+      "startY": 206.5,
+      "endY": 339.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1521.0,
+      "startY": 34.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1284.5,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1689.0,
+      "endX": 1903.0,
+      "startY": 210.5,
+      "endY": 339.5
+    },
+    {
+      "startX": 1233.0,
+      "endX": 1405.0,
+      "startY": 199.5,
+      "endY": 362.5
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1518.0,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1286.0,
+      "startY": 31.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1521.5,
+      "startY": 33.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1286.0,
+      "startY": 31.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1694.0,
+      "endX": 1904.0,
+      "startY": 208.5,
+      "endY": 341.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1518.5,
+      "startY": 33.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1288.0,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1891.0,
+      "startY": 203.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1521.0,
+      "startY": 31.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1285.0,
+      "startY": 32.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1904.0,
+      "startY": 207.5,
+      "endY": 340.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1520.0,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1283.5,
+      "startY": 34.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1694.0,
+      "endX": 1904.0,
+      "startY": 208.0,
+      "endY": 342.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1524.0,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1283.0,
+      "startY": 32.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1691.0,
+      "endX": 1907.0,
+      "startY": 208.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1521.5,
+      "startY": 31.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1283.5,
+      "startY": 33.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1696.0,
+      "endX": 1906.0,
+      "startY": 207.5,
+      "endY": 342.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1520.0,
+      "startY": 33.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1282.5,
+      "startY": 32.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1694.0,
+      "endX": 1906.0,
+      "startY": 207.5,
+      "endY": 344.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1520.5,
+      "startY": 30.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1283.0,
+      "startY": 31.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1908.0,
+      "startY": 205.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1521.5,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1283.5,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1907.5,
+      "startY": 206.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1520.0,
+      "startY": 35.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1284.5,
+      "startY": 33.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1906.5,
+      "startY": 206.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1519.0,
+      "startY": 36.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1283.5,
+      "startY": 32.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1903.5,
+      "startY": 208.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1522.5,
+      "startY": 34.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1283.5,
+      "startY": 33.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1690.0,
+      "endX": 1906.0,
+      "startY": 207.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1520.0,
+      "startY": 32.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1283.0,
+      "startY": 33.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1905.5,
+      "startY": 208.0,
+      "endY": 348.0
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1520.5,
+      "startY": 34.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1282.5,
+      "startY": 34.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1906.0,
+      "startY": 206.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1520.5,
+      "startY": 33.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1280.5,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1905.0,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1525.5,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1281.5,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1907.5,
+      "startY": 205.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1523.5,
+      "startY": 35.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1280.0,
+      "startY": 32.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1906.0,
+      "startY": 206.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1523.5,
+      "startY": 32.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1280.0,
+      "startY": 32.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1904.0,
+      "startY": 207.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1523.5,
+      "startY": 35.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1279.0,
+      "startY": 34.0,
+      "endY": 172.0
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1906.5,
+      "startY": 206.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1525.5,
+      "startY": 35.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1906.5,
+      "startY": 206.0,
+      "endY": 344.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1281.0,
+      "startY": 31.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1353.5,
+      "endX": 1528.5,
+      "startY": 31.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1907.0,
+      "startY": 208.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1281.5,
+      "startY": 32.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1528.5,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1282.5,
+      "startY": 34.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1907.0,
+      "startY": 207.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1526.0,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1282.0,
+      "startY": 34.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1905.0,
+      "startY": 208.5,
+      "endY": 343.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1529.0,
+      "startY": 32.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1907.5,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1284.5,
+      "startY": 34.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1696.0,
+      "endX": 1908.0,
+      "startY": 208.0,
+      "endY": 342.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1525.5,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1283.0,
+      "startY": 34.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1908.5,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1527.5,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1282.0,
+      "startY": 32.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1906.0,
+      "startY": 209.0,
+      "endY": 343.0
+    },
+    {
+      "startX": 1352.0,
+      "endX": 1528.0,
+      "startY": 31.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1284.5,
+      "startY": 32.5,
+      "endY": 173.5
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1907.0,
+      "startY": 209.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1355.0,
+      "endX": 1525.0,
+      "startY": 35.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1284.0,
+      "startY": 34.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1695.0,
+      "endX": 1905.0,
+      "startY": 208.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1526.5,
+      "startY": 32.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1285.5,
+      "startY": 32.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1907.5,
+      "startY": 207.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1526.5,
+      "startY": 32.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1282.5,
+      "startY": 33.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1906.5,
+      "startY": 206.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1524.5,
+      "startY": 33.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1283.5,
+      "startY": 32.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1907.5,
+      "startY": 208.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1526.0,
+      "startY": 36.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1114.5,
+      "endX": 1283.5,
+      "startY": 35.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1696.5,
+      "endX": 1909.5,
+      "startY": 209.0,
+      "endY": 347.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1526.0,
+      "startY": 31.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1287.0,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1906.5,
+      "startY": 208.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1527.5,
+      "startY": 30.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1283.0,
+      "startY": 33.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1694.0,
+      "endX": 1906.0,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1282.0,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1525.5,
+      "startY": 37.5,
+      "endY": 154.5
+    },
+    {
+      "startX": 1692.5,
+      "endX": 1909.5,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1281.5,
+      "startY": 37.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1353.0,
+      "endX": 1527.0,
+      "startY": 37.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1282.5,
+      "startY": 33.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1895.5,
+      "startY": 204.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1281.5,
+      "startY": 35.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1336.5,
+      "endX": 1535.5,
+      "startY": 35.5,
+      "endY": 152.5
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1907.0,
+      "startY": 206.5,
+      "endY": 349.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1281.0,
+      "startY": 36.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1909.5,
+      "startY": 207.5,
+      "endY": 346.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1524.0,
+      "startY": 30.5,
+      "endY": 155.5
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1281.5,
+      "startY": 33.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1697.5,
+      "endX": 1908.5,
+      "startY": 209.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1528.0,
+      "startY": 30.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1280.0,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1697.0,
+      "endX": 1909.0,
+      "startY": 208.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1532.5,
+      "startY": 32.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1282.5,
+      "startY": 34.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1336.0,
+      "endX": 1536.0,
+      "startY": 34.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1909.5,
+      "startY": 205.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1285.0,
+      "startY": 34.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1334.5,
+      "endX": 1531.5,
+      "startY": 35.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1693.0,
+      "endX": 1907.0,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1280.5,
+      "startY": 35.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1697.5,
+      "endX": 1908.5,
+      "startY": 209.0,
+      "endY": 349.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1527.0,
+      "startY": 37.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1283.0,
+      "startY": 33.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1525.5,
+      "startY": 34.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1699.5,
+      "endX": 1908.5,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1523.5,
+      "startY": 37.0,
+      "endY": 153.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1284.5,
+      "startY": 33.5,
+      "endY": 172.5
+    },
+    {
+      "startX": 1695.5,
+      "endX": 1910.5,
+      "startY": 208.0,
+      "endY": 346.0
+    },
+    {
+      "startX": 1113.5,
+      "endX": 1282.5,
+      "startY": 35.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1527.0,
+      "startY": 32.5,
+      "endY": 155.5
+    },
+    {
+      "startX": 1694.5,
+      "endX": 1909.5,
+      "startY": 208.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1525.5,
+      "startY": 33.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1281.0,
+      "startY": 35.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1699.5,
+      "endX": 1908.5,
+      "startY": 209.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1525.0,
+      "startY": 32.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1284.5,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1896.0,
+      "startY": 204.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1525.5,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1284.5,
+      "startY": 31.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1701.0,
+      "endX": 1909.0,
+      "startY": 210.5,
+      "endY": 345.5
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1522.5,
+      "startY": 35.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1288.0,
+      "startY": 31.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1902.0,
+      "startY": 207.0,
+      "endY": 353.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1523.0,
+      "startY": 29.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1111.5,
+      "endX": 1286.5,
+      "startY": 28.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1697.0,
+      "endX": 1909.0,
+      "startY": 207.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1521.0,
+      "startY": 29.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1286.5,
+      "startY": 29.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1699.0,
+      "endX": 1909.0,
+      "startY": 210.5,
+      "endY": 347.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1521.5,
+      "startY": 30.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1287.0,
+      "startY": 27.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1700.0,
+      "endX": 1910.0,
+      "startY": 209.0,
+      "endY": 345.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1522.5,
+      "startY": 30.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1113.0,
+      "endX": 1285.0,
+      "startY": 29.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1901.0,
+      "startY": 206.5,
+      "endY": 353.5
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1522.0,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1286.0,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1901.5,
+      "startY": 206.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1522.0,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1112.5,
+      "endX": 1287.5,
+      "startY": 25.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1902.5,
+      "startY": 207.5,
+      "endY": 354.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1522.0,
+      "startY": 30.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1289.5,
+      "startY": 27.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1898.0,
+      "startY": 208.0,
+      "endY": 352.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1523.0,
+      "startY": 30.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1291.0,
+      "startY": 25.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1898.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1522.5,
+      "startY": 37.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1292.0,
+      "startY": 32.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1899.0,
+      "startY": 207.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1519.5,
+      "startY": 40.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1290.0,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1897.0,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1354.5,
+      "endX": 1521.5,
+      "startY": 38.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1122.5,
+      "endX": 1289.5,
+      "startY": 33.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1898.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1354.0,
+      "endX": 1520.0,
+      "startY": 42.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1122.0,
+      "endX": 1290.0,
+      "startY": 33.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1898.5,
+      "startY": 205.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1353.5,
+      "endX": 1518.5,
+      "startY": 40.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 33.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1896.5,
+      "startY": 205.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1519.5,
+      "startY": 38.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 34.0,
+      "endY": 156.0
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1896.0,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1352.5,
+      "endX": 1515.5,
+      "startY": 40.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 35.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1898.0,
+      "startY": 205.5,
+      "endY": 362.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1515.0,
+      "startY": 39.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1121.0,
+      "endX": 1289.0,
+      "startY": 34.5,
+      "endY": 153.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1894.0,
+      "startY": 205.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1514.5,
+      "startY": 39.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1286.0,
+      "startY": 34.5,
+      "endY": 153.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1898.0,
+      "startY": 204.0,
+      "endY": 362.0
+    },
+    {
+      "startX": 1353.0,
+      "endX": 1515.0,
+      "startY": 39.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1287.5,
+      "startY": 33.0,
+      "endY": 155.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1899.0,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1353.0,
+      "endX": 1515.0,
+      "startY": 39.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1291.0,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1901.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1515.0,
+      "startY": 36.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1291.0,
+      "startY": 30.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1705.5,
+      "endX": 1898.5,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1515.0,
+      "startY": 40.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1290.5,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1900.5,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1516.5,
+      "startY": 37.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1293.0,
+      "startY": 29.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1899.5,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1351.5,
+      "endX": 1520.5,
+      "startY": 37.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1293.0,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1902.5,
+      "startY": 207.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1512.5,
+      "startY": 40.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1293.5,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1899.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1513.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1289.0,
+      "startY": 31.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1899.0,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1517.0,
+      "startY": 38.5,
+      "endY": 155.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1289.5,
+      "startY": 35.5,
+      "endY": 156.5
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1898.5,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1514.0,
+      "startY": 42.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1289.5,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1898.0,
+      "startY": 208.0,
+      "endY": 358.0
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1515.0,
+      "startY": 41.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1291.5,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1897.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1513.5,
+      "startY": 40.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1290.0,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1896.0,
+      "startY": 207.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1513.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1291.5,
+      "startY": 32.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1897.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 41.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1127.0,
+      "endX": 1297.0,
+      "startY": 33.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1899.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1514.0,
+      "startY": 41.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1292.0,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1899.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1349.0,
+      "endX": 1515.0,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1290.0,
+      "startY": 35.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1898.5,
+      "startY": 208.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1515.5,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1289.0,
+      "startY": 33.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1897.5,
+      "startY": 207.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1513.5,
+      "startY": 42.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1290.0,
+      "startY": 34.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1897.0,
+      "startY": 207.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1515.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1289.0,
+      "startY": 32.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1893.5,
+      "startY": 206.0,
+      "endY": 358.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1515.0,
+      "startY": 41.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1289.0,
+      "startY": 33.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1893.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1349.5,
+      "endX": 1516.5,
+      "startY": 43.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1288.0,
+      "startY": 31.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1896.0,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1516.5,
+      "startY": 40.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1288.5,
+      "startY": 33.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1894.0,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1288.5,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1895.5,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1350.5,
+      "endX": 1517.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 31.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1897.0,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1348.0,
+      "endX": 1514.0,
+      "startY": 40.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1289.0,
+      "startY": 33.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1894.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1513.5,
+      "startY": 39.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 30.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1895.0,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 39.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1122.0,
+      "endX": 1288.0,
+      "startY": 34.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1896.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1515.0,
+      "startY": 41.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1285.5,
+      "startY": 33.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1897.0,
+      "startY": 206.0,
+      "endY": 362.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1514.0,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1286.0,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1896.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1351.0,
+      "endX": 1515.0,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1287.5,
+      "startY": 36.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1897.5,
+      "startY": 207.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1515.0,
+      "startY": 43.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 35.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1895.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1515.5,
+      "startY": 41.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1287.5,
+      "startY": 33.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1705.5,
+      "endX": 1894.5,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 40.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1288.5,
+      "startY": 35.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1895.5,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1515.5,
+      "startY": 41.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1289.5,
+      "startY": 35.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1893.5,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1350.0,
+      "endX": 1514.0,
+      "startY": 43.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 35.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1895.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1513.0,
+      "startY": 39.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1288.5,
+      "startY": 37.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1891.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1514.5,
+      "startY": 41.0,
+      "endY": 157.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1289.0,
+      "startY": 36.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1894.5,
+      "startY": 206.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1514.0,
+      "startY": 40.5,
+      "endY": 157.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1285.5,
+      "startY": 37.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1893.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1514.0,
+      "startY": 40.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 36.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1893.5,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1515.0,
+      "startY": 40.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1286.5,
+      "startY": 37.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1895.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1513.5,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1291.5,
+      "startY": 31.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1893.0,
+      "startY": 205.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1513.0,
+      "startY": 42.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 37.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1894.0,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1515.0,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1287.0,
+      "startY": 34.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1703.0,
+      "endX": 1893.0,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1288.5,
+      "startY": 36.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1894.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1516.0,
+      "startY": 40.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1288.0,
+      "startY": 37.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1893.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1340.0,
+      "endX": 1516.0,
+      "startY": 38.0,
+      "endY": 158.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1289.5,
+      "startY": 35.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1892.0,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1516.0,
+      "startY": 41.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 36.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1894.0,
+      "startY": 205.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1342.5,
+      "endX": 1517.5,
+      "startY": 40.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1287.5,
+      "startY": 35.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1896.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1516.0,
+      "startY": 40.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1116.0,
+      "endX": 1288.0,
+      "startY": 34.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1707.0,
+      "endX": 1893.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 41.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1891.5,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1514.0,
+      "startY": 41.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 33.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1892.5,
+      "startY": 207.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1517.5,
+      "startY": 41.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1286.5,
+      "startY": 35.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1894.5,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1516.0,
+      "startY": 42.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1289.0,
+      "startY": 38.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1703.0,
+      "endX": 1895.0,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1347.5,
+      "endX": 1514.5,
+      "startY": 42.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 37.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1704.5,
+      "endX": 1893.5,
+      "startY": 205.5,
+      "endY": 362.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1515.5,
+      "startY": 41.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1285.5,
+      "startY": 37.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1894.5,
+      "startY": 205.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1516.0,
+      "startY": 42.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1287.5,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1706.5,
+      "endX": 1893.5,
+      "startY": 205.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1516.5,
+      "startY": 39.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1288.5,
+      "startY": 36.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1704.0,
+      "endX": 1894.0,
+      "startY": 206.0,
+      "endY": 360.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1515.5,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 36.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1893.0,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1514.5,
+      "startY": 41.5,
+      "endY": 158.5
+    },
+    {
+      "startX": 1703.0,
+      "endX": 1895.0,
+      "startY": 206.5,
+      "endY": 361.5
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1288.5,
+      "startY": 34.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1518.0,
+      "startY": 42.0,
+      "endY": 160.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1288.5,
+      "startY": 34.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1706.0,
+      "endX": 1896.0,
+      "startY": 208.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1515.5,
+      "startY": 43.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1285.0,
+      "startY": 36.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1896.5,
+      "startY": 205.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1518.5,
+      "startY": 40.5,
+      "endY": 159.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1287.0,
+      "startY": 34.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1700.5,
+      "endX": 1897.5,
+      "startY": 206.5,
+      "endY": 361.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 39.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1285.0,
+      "startY": 33.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1700.5,
+      "endX": 1897.5,
+      "startY": 205.0,
+      "endY": 363.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 39.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1119.5,
+      "endX": 1282.5,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1698.0,
+      "endX": 1900.0,
+      "startY": 206.0,
+      "endY": 364.0
+    },
+    {
+      "startX": 1342.5,
+      "endX": 1517.5,
+      "startY": 36.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1120.5,
+      "endX": 1285.5,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1686.5,
+      "endX": 1905.5,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1521.0,
+      "startY": 34.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1285.0,
+      "startY": 28.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1700.0,
+      "endX": 1900.0,
+      "startY": 207.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1340.5,
+      "endX": 1519.5,
+      "startY": 34.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1284.0,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1701.0,
+      "endX": 1899.0,
+      "startY": 207.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1518.5,
+      "startY": 37.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1284.5,
+      "startY": 29.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1701.5,
+      "endX": 1900.5,
+      "startY": 207.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1520.0,
+      "startY": 38.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1284.0,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1697.0,
+      "endX": 1899.0,
+      "startY": 207.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1519.0,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1286.0,
+      "startY": 30.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1702.5,
+      "endX": 1899.5,
+      "startY": 207.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1341.0,
+      "endX": 1519.0,
+      "startY": 34.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 29.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1701.0,
+      "endX": 1897.0,
+      "startY": 207.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1341.5,
+      "endX": 1520.5,
+      "startY": 33.0,
+      "endY": 161.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1286.0,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1700.5,
+      "endX": 1899.5,
+      "startY": 207.0,
+      "endY": 363.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 32.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1699.0,
+      "endX": 1899.0,
+      "startY": 205.5,
+      "endY": 364.5
+    },
+    {
+      "startX": 1340.0,
+      "endX": 1520.0,
+      "startY": 30.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 29.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1702.0,
+      "endX": 1900.0,
+      "startY": 207.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1340.5,
+      "endX": 1525.5,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1288.0,
+      "startY": 29.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1703.0,
+      "endX": 1901.0,
+      "startY": 215.5,
+      "endY": 380.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1522.0,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1288.0,
+      "startY": 31.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1693.5,
+      "endX": 1898.5,
+      "startY": 212.5,
+      "endY": 381.5
+    },
+    {
+      "startX": 1341.0,
+      "endX": 1523.0,
+      "startY": 30.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1289.0,
+      "startY": 30.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1902.5,
+      "startY": 207.5,
+      "endY": 362.5
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1526.5,
+      "startY": 32.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1291.0,
+      "startY": 31.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1670.5,
+      "endX": 1905.5,
+      "startY": 212.5,
+      "endY": 385.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1523.0,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1289.0,
+      "startY": 33.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1709.5,
+      "endX": 1904.5,
+      "startY": 206.5,
+      "endY": 361.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1524.0,
+      "startY": 33.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1903.0,
+      "startY": 207.0,
+      "endY": 361.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1288.0,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1520.0,
+      "startY": 37.0,
+      "endY": 159.0
+    },
+    {
+      "startX": 1714.0,
+      "endX": 1904.0,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1289.5,
+      "startY": 33.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1521.0,
+      "startY": 32.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1115.5,
+      "endX": 1286.5,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1676.0,
+      "endX": 1906.0,
+      "startY": 213.5,
+      "endY": 382.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1525.0,
+      "startY": 29.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1675.5,
+      "endX": 1908.5,
+      "startY": 209.0,
+      "endY": 383.0
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1289.0,
+      "startY": 30.5,
+      "endY": 171.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1521.5,
+      "startY": 31.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1116.5,
+      "endX": 1287.5,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1684.0,
+      "endX": 1908.0,
+      "startY": 204.5,
+      "endY": 363.5
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1522.5,
+      "startY": 29.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1707.5,
+      "endX": 1904.5,
+      "startY": 208.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1288.0,
+      "startY": 29.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1522.5,
+      "startY": 29.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1117.5,
+      "endX": 1288.5,
+      "startY": 29.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1905.0,
+      "startY": 206.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1519.5,
+      "startY": 30.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1903.0,
+      "startY": 208.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1114.0,
+      "endX": 1286.0,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1520.0,
+      "startY": 27.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1904.0,
+      "startY": 208.0,
+      "endY": 358.0
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1518.0,
+      "startY": 26.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1901.5,
+      "startY": 206.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1519.0,
+      "startY": 28.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1711.5,
+      "endX": 1902.5,
+      "startY": 209.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 1118.0,
+      "endX": 1288.0,
+      "startY": 30.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1521.0,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1903.0,
+      "startY": 207.5,
+      "endY": 360.5
+    },
+    {
+      "startX": 1117.0,
+      "endX": 1287.0,
+      "startY": 29.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1518.0,
+      "startY": 29.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1903.0,
+      "startY": 208.5,
+      "endY": 359.5
+    },
+    {
+      "startX": 1119.0,
+      "endX": 1289.0,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1711.0,
+      "endX": 1901.0,
+      "startY": 208.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1520.5,
+      "startY": 27.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1712.0,
+      "endX": 1902.0,
+      "startY": 209.0,
+      "endY": 357.0
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1520.0,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1118.5,
+      "endX": 1287.5,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1522.0,
+      "startY": 28.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1903.0,
+      "startY": 207.5,
+      "endY": 358.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1517.5,
+      "startY": 29.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1708.5,
+      "endX": 1901.5,
+      "startY": 208.0,
+      "endY": 358.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1517.0,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1712.5,
+      "endX": 1901.5,
+      "startY": 209.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1120.0,
+      "endX": 1290.0,
+      "startY": 30.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1519.0,
+      "startY": 29.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1713.5,
+      "endX": 1902.5,
+      "startY": 209.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1517.5,
+      "startY": 31.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1715.0,
+      "endX": 1901.0,
+      "startY": 209.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1520.0,
+      "startY": 31.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1708.0,
+      "endX": 1898.0,
+      "startY": 208.0,
+      "endY": 358.0
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1520.0,
+      "startY": 32.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1713.0,
+      "endX": 1901.0,
+      "startY": 208.0,
+      "endY": 350.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1289.0,
+      "startY": 31.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1519.5,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1709.0,
+      "endX": 1901.0,
+      "startY": 208.0,
+      "endY": 354.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1289.0,
+      "startY": 31.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1344.5,
+      "endX": 1519.5,
+      "startY": 28.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1115.0,
+      "endX": 1287.0,
+      "startY": 30.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1901.5,
+      "startY": 207.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1519.0,
+      "startY": 29.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1710.5,
+      "endX": 1899.5,
+      "startY": 207.0,
+      "endY": 351.0
+    },
+    {
+      "startX": 1339.5,
+      "endX": 1512.5,
+      "startY": 24.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1701.0,
+      "endX": 1895.0,
+      "startY": 202.5,
+      "endY": 357.5
+    },
+    {
+      "startX": 1337.5,
+      "endX": 1516.5,
+      "startY": 23.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1700.0,
+      "endX": 1896.0,
+      "startY": 201.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1337.0,
+      "endX": 1513.0,
+      "startY": 22.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1339.5,
+      "endX": 1514.5,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1338.5,
+      "endX": 1515.5,
+      "startY": 24.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1701.5,
+      "endX": 1896.5,
+      "startY": 201.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1339.0,
+      "endX": 1513.0,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1338.5,
+      "endX": 1513.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1705.0,
+      "endX": 1897.0,
+      "startY": 201.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1339.5,
+      "endX": 1514.5,
+      "startY": 22.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1702.5,
+      "endX": 1895.5,
+      "startY": 202.0,
+      "endY": 356.0
+    },
+    {
+      "startX": 1110.5,
+      "endX": 1283.5,
+      "startY": 25.5,
+      "endY": 170.5
+    },
+    {
+      "startX": 1338.5,
+      "endX": 1513.5,
+      "startY": 24.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1337.5,
+      "endX": 1518.5,
+      "startY": 21.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1339.0,
+      "endX": 1517.0,
+      "startY": 21.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1337.0,
+      "endX": 1517.0,
+      "startY": 23.5,
+      "endY": 160.5
+    },
+    {
+      "startX": 1337.0,
+      "endX": 1517.0,
+      "startY": 22.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1336.5,
+      "endX": 1515.5,
+      "startY": 24.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1112.0,
+      "endX": 1288.0,
+      "startY": 26.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1338.0,
+      "endX": 1516.0,
+      "startY": 23.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1285.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1337.5,
+      "endX": 1518.5,
+      "startY": 23.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1287.0,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1337.5,
+      "endX": 1516.5,
+      "startY": 25.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1340.0,
+      "endX": 1518.0,
+      "startY": 24.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1109.5,
+      "endX": 1286.5,
+      "startY": 26.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1340.0,
+      "endX": 1518.0,
+      "startY": 27.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1285.0,
+      "startY": 26.5,
+      "endY": 165.5
+    },
+    {
+      "startX": 1699.5,
+      "endX": 1896.5,
+      "startY": 201.5,
+      "endY": 356.5
+    },
+    {
+      "startX": 1338.5,
+      "endX": 1517.5,
+      "startY": 23.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1108.0,
+      "endX": 1286.0,
+      "startY": 26.0,
+      "endY": 166.0
+    },
+    {
+      "startX": 1701.0,
+      "endX": 1897.0,
+      "startY": 203.0,
+      "endY": 359.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1517.0,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1288.5,
+      "startY": 26.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1100.5,
+      "endX": 1287.5,
+      "startY": 20.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1342.5,
+      "endX": 1523.5,
+      "startY": 27.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1692.0,
+      "endX": 1904.0,
+      "startY": 209.5,
+      "endY": 348.5
+    },
+    {
+      "startX": 1103.0,
+      "endX": 1287.0,
+      "startY": 23.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1521.0,
+      "startY": 27.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1702.0,
+      "endX": 1892.0,
+      "startY": 202.5,
+      "endY": 355.5
+    },
+    {
+      "startX": 1106.0,
+      "endX": 1286.0,
+      "startY": 23.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1522.0,
+      "startY": 29.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1703.5,
+      "endX": 1890.5,
+      "startY": 203.0,
+      "endY": 355.0
+    },
+    {
+      "startX": 1104.0,
+      "endX": 1286.0,
+      "startY": 22.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1520.0,
+      "startY": 26.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1103.0,
+      "endX": 1287.0,
+      "startY": 21.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1342.0,
+      "endX": 1520.0,
+      "startY": 24.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1522.0,
+      "startY": 27.0,
+      "endY": 165.0
+    },
+    {
+      "startX": 1105.0,
+      "endX": 1287.0,
+      "startY": 24.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1339.5,
+      "endX": 1520.5,
+      "startY": 24.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1102.5,
+      "endX": 1287.5,
+      "startY": 22.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1520.5,
+      "startY": 27.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1106.5,
+      "endX": 1287.5,
+      "startY": 22.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1520.0,
+      "startY": 26.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1108.5,
+      "endX": 1289.5,
+      "startY": 23.5,
+      "endY": 166.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1518.0,
+      "startY": 26.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1286.5,
+      "startY": 24.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1520.5,
+      "startY": 27.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1106.5,
+      "endX": 1289.5,
+      "startY": 23.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1519.5,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1106.0,
+      "endX": 1290.0,
+      "startY": 22.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1520.0,
+      "startY": 24.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1287.0,
+      "startY": 24.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1289.0,
+      "startY": 24.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1344.0,
+      "endX": 1518.0,
+      "startY": 26.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1106.0,
+      "endX": 1288.0,
+      "startY": 25.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1347.0,
+      "endX": 1517.0,
+      "startY": 27.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1109.0,
+      "endX": 1287.0,
+      "startY": 25.0,
+      "endY": 169.0
+    },
+    {
+      "startX": 1343.5,
+      "endX": 1518.5,
+      "startY": 26.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1108.0,
+      "endX": 1290.0,
+      "startY": 24.5,
+      "endY": 169.5
+    },
+    {
+      "startX": 1341.0,
+      "endX": 1517.0,
+      "startY": 24.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1289.0,
+      "startY": 24.0,
+      "endY": 170.0
+    },
+    {
+      "startX": 1342.5,
+      "endX": 1517.5,
+      "startY": 24.0,
+      "endY": 162.0
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1289.0,
+      "startY": 24.0,
+      "endY": 168.0
+    },
+    {
+      "startX": 1346.5,
+      "endX": 1519.5,
+      "startY": 28.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1108.0,
+      "endX": 1286.0,
+      "startY": 25.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1107.5,
+      "endX": 1288.5,
+      "startY": 23.5,
+      "endY": 168.5
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1519.0,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1345.0,
+      "endX": 1517.0,
+      "startY": 28.0,
+      "endY": 164.0
+    },
+    {
+      "startX": 1105.5,
+      "endX": 1288.5,
+      "startY": 25.0,
+      "endY": 171.0
+    },
+    {
+      "startX": 1348.5,
+      "endX": 1517.5,
+      "startY": 28.5,
+      "endY": 163.5
+    },
+    {
+      "startX": 1106.0,
+      "endX": 1288.0,
+      "startY": 24.5,
+      "endY": 167.5
+    },
+    {
+      "startX": 1345.5,
+      "endX": 1516.5,
+      "startY": 25.0,
+      "endY": 163.0
+    },
+    {
+      "startX": 1111.0,
+      "endX": 1285.0,
+      "startY": 25.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1104.0,
+      "endX": 1290.0,
+      "startY": 25.0,
+      "endY": 167.0
+    },
+    {
+      "startX": 1343.0,
+      "endX": 1517.0,
+      "startY": 24.5,
+      "endY": 161.5
+    },
+    {
+      "startX": 1106.0,
+      "endX": 1290.0,
+      "startY": 23.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1340.5,
+      "endX": 1521.5,
+      "startY": 25.5,
+      "endY": 164.5
+    },
+    {
+      "startX": 1107.0,
+      "endX": 1289.0,
+      "startY": 23.5,
+      "endY": 162.5
+    },
+    {
+      "startX": 1346.0,
+      "endX": 1520.0,
+      "startY": 27.0,
+      "endY": 161.0
+    }
+  ]
+}
