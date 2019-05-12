@@ -29,7 +29,7 @@ classes = None
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
 ID = 1
 interval = 20
-dbscan_ready=False
+dbscan_ready=True
 min_distance = 10000
 nSamples = 0
 free_spaces = -1
@@ -38,7 +38,7 @@ park_boxes=[]
 classify_treshold = 0.3
 time_thresh = 1200 # = 20 min
 
-image1 = cv2.imread("../Image/1.png")
+image1 = cv2.imread("../Image/image1.jpg")
 image2 = cv2.imread("../Image/2.png")
 image3 = cv2.imread("../Image/3.png")
 image4 = cv2.imread("../Image/4.png")
@@ -468,16 +468,16 @@ def yolo3_classify(image_yolo, classes, COLORS):
 print("Program starts")
 
 while(True):
-    #try:
-    #    x = int(input("Enter the image number from 1-7...")) #integer input
-    #except ValueError:
-    #    x=1
-    #if(x<1 or x>7):
-    #    print("Value out of bounds, choses img 1 instead")
-    #    x=1
+    try:
+        x = int(input("Enter the image number from 1-7...")) #integer input
+    except ValueError:
+        x=1
+    if(x<1 or x>7):
+        print("Value out of bounds, choses img 1 instead")
+        x=1
 
-    #image_yolo3 = copy(vars()["image"+str(x)])
-    image_yolo3 = get_cam_img()
+    image_yolo3 = copy(vars()["image"+str(x)])
+    #image_yolo3 = get_cam_img()
     test_image = image_yolo3.copy()
 
     start = time.time()
