@@ -22,7 +22,7 @@ interval = 5
 vehicle_boxes=[]
 park_boxes=[]
 classify_treshold = 0.8
-imgpath1 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/1.png"
+imgpath1 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/rapport_yolo.jpg"
 image1 = cv2.imread(imgpath1)
 imgpath2 = "C:/Users/YURDAER/Desktop/GitHub/Master_thesis/all_in_one/Image/2.png"
 image2 = cv2.imread(imgpath2)
@@ -238,7 +238,7 @@ def yolo3_classify(image_yolo, classes, COLORS):
     Width = image_yolo.shape[1]
     Height = image_yolo.shape[0]
     scale = 0.00392
-    net = cv2.dnn.readNet("../yolo3/yolov3.cfg", "../yolo3/yolov3.weights")
+    net = cv2.dnn.readNet("../../yolo3/yolov3.cfg", "../../yolo3/yolov3.weights")
     blob = cv2.dnn.blobFromImage(image_yolo, scale, (416,416), (0,0,0), True, crop=False)
     net.setInput(blob)
     start = time.time()

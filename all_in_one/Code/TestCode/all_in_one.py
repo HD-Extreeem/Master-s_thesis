@@ -24,7 +24,7 @@ mob_classes = ["background", "aeroplane", "bicycle", "bird", "boat",
 
 alex_classes = ["free", "busy"]
 
-with open("yolo3/yolov3.txt", 'r') as f:
+with open("../../yolo3/yolov3.txt", 'r') as f:
     classes = [line.strip() for line in f.readlines()]
 
 COLORS = np.random.uniform(0, 255, size=(len(classes), 3))
@@ -57,7 +57,7 @@ def yolo3_classify(image_yolo3, classes, COLORS):
     Height = image_yolo3.shape[0]
     scale = 0.00392
 
-    net = cv2.dnn.readNet("yolo3/yolov3.cfg", "yolo3/yolov3.weights")
+    net = cv2.dnn.readNet("../../yolo3/yolov3.cfg", "../../yolo3/yolov3.weights")
 
     blob = cv2.dnn.blobFromImage(image_yolo3, scale, (416,416), (0,0,0), True, crop=False)
 
@@ -95,12 +95,16 @@ def yolo3_classify(image_yolo3, classes, COLORS):
     for i in indices:
         i = i[0]
         box = boxes[i]
-        x = box[0]
-        y = box[1]
-        w = box[2]
-        h = box[3]
+        x = int(box[0])
+        y = int(box[1])
+        w = int(box[2])
+        h = int(box[3])
         print("{}: {:.2f}%".format(str(classes[class_ids[i]]), confidences[i]*100))
-        draw_prediction(image_yolo3, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
+        #draw_prediction(image_yolo3, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
+        cv2.rectangle(image_yolo3,(x-10,y-10),(x+w,y+h),(0,255,0),10)
+        #cv2.putText(image_yolo3, str(classes[class_ids[i]]), (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,255,0), 6)
+        #cv2.putText(image_yolo3, "%" +str(int(confidences[i]*100)), (x+550,y-10), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,0,255), 6)
+
 
 #TINY-YOLO3
 def tiny_yolo3_classify(image_yolo3_tiny, classes, COLORS):
@@ -264,25 +268,25 @@ def alexnet_classify(image_alexnet, alex_classes, COLORS):
 
 
 
-#image_yolo3 = cv2.imread(args.image)
+image_yolo3 = cv2.imread(args.image)
 #image_yolo3_tiny = cv2.imread(args.image)
 #image_ssd_mobilenet = cv2.imread(args.image)
-image_alexnet = cv2.imread(args.image)
+#image_alexnet = cv2.imread(args.image)
 
-#yolo3_classify(image_yolo3, classes, COLORS)
+yolo3_classify(image_yolo3, classes, COLORS)
 #tiny_yolo3_classify(image_yolo3_tiny, classes, COLORS)
-#mobilenet_classify(image_ssd_mobilenet, mob_classes, COLORS)
-alexnet_classify(image_alexnet, alex_classes, COLORS)
-
-#cv2.imshow("YOLO3", image_yolo3)
+##mobilenet_classify(image_ssd_mobilenet, mob_classes, COLORS)
+#alexnet_classify(image_alexnet, alex_classes, COLORS)
+image_yolo3 = cv2.resize(image_yolo3, (800, 600))
+cv2.imshow("YOLO3", image_yolo3)
 #cv2.imshow("TINY-YOLO3", image_yolo3_tiny)
 #cv2.imshow("SSD-MOBILENET", image_ssd_mobilenet)
-cv2.imshow("AlexNet", image_alexnet)
+#cv2.imshow("AlexNet", image_alexnet)
 cv2.waitKey()
     
-#cv2.imwrite("YOLO3.jpg", image_yolo3)
+cv2.imwrite("YOLO3.jpg", image_yolo3)
 #cv2.imwrite("TINY-YOLO3.jpg", image_yolo3_tiny)
 #cv2.imwrite("SSD-MOBILENET.jpg", image_ssd_mobilenet)
-cv2.imwrite("AlexNet", image_alexnet)
+#cv2.imwrite("AlexNet", image_alexnet)
 
 cv2.destroyAllWindows()

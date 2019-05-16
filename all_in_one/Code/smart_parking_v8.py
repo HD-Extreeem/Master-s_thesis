@@ -39,11 +39,14 @@ classify_treshold = 0.3
 time_thresh = 1200 # = 20 min
 
 image1 = cv2.imread("../Image/image1.jpg")
-image2 = cv2.imread("../Image/2.png")
-image3 = cv2.imread("../Image/3.png")
-image4 = cv2.imread("../Image/4.png")
-image5 = cv2.imread("../Image/5.png")
-image6 = cv2.imread("../Image/6.png")
+image2 = cv2.imread("../Image/image2.jpg")
+image3 = cv2.imread("../Image/image3.jpg")
+image4 = cv2.imread("../Image/image4.jpg")
+image5 = cv2.imread("../Image/image5.jpg")
+image6 = cv2.imread("../Image/image6.jpg")
+image7 = cv2.imread("../Image/image7.jpg")
+image8 = cv2.imread("../Image/image8.jpg")
+image9 = cv2.imread("../Image/image9.jpg")
 #image6 = cv2.imread("../Image/park_stor.jpg")
 #image7 = cv2.imread("../Image/park_cnr.png")
 
@@ -545,7 +548,7 @@ while(True):
         put_coord_dbScan(vehicle_box_reserv)
         nSamples += 1
     vehicle_boxes.clear()
-    if nSamples >= 2:
+    if nSamples >= 3:
         cluster_parking()
         park_boxes = load_coord()
         for box in park_boxes:
