@@ -334,7 +334,7 @@ def calculate_free_spots(image,p_boxes,v_boxes):
            free_space += 1
            slot[6] = "Free"
         
-        if IoU_max > slot[4]+0.10:
+        if IoU_max > slot[4]+0.50:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,0,255),10)
            slot[6] = "Busy"
            slot[7] = 0  if slot[7] is None else slot[7]+round((time.time()-last_time),3)
