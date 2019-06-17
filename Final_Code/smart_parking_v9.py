@@ -364,11 +364,16 @@ def calculate_free_spots(image,p_boxes,v_boxes):
     last_time = time.time()
     return free_space, v_boxes
 
-
+# |-------------------------------------------------------------------|
+# |- Method that compares the already stored parking spot coordinates-|
+# |- and the new parking spot detection                              -|
+# |-------------------------------------------------------------------|
 def compare_spots(p_boxes,v_boxes):
     
     for vehicle in v_boxes:
         IoU_max = 0
+        # Loop through the new predicted bounding boxes and already stored bounding boxes
+        # Calculates the IoU value and stores the maximum Iou and the parking information
         for park in p_boxes:
             IoU = calculate_IoU(park,vehicle)
             if IoU_max <= IoU:
@@ -376,12 +381,17 @@ def compare_spots(p_boxes,v_boxes):
                x1,x2,y1,y2,temp_iou,Id,state = park
     
         X1,X2,Y1,Y2,v_type = vehicle
+        # If the IoU is very small then we store the coordinate
+        # Since this is a new possible parking spot
         if IoU_max < (temp_iou + 0.20) and dbscan_ready != True:
             print("Lägger till en ny p_plats")
             p_boxes.append([X1,X2,Y1,Y2])
             put_boxes(p_boxes)
+        
+        # Else if the intersection is greater than 80% and not a bus/motorcycle
+        # Then we take the average value of the parking spot (Coordinate)
         elif IoU_max > 0.80 and v_type != "motorcycle" and v_type != "bus" and dbscan_ready != True:
-            print("Tar medelvärdet och uppdaterar, IoU is:", IoU_max)
+            print("Taking the average value and updating, Iou is: ", IoU_max)
             X1=(x1+X1)/2
             X2=(x2+X2)/2
             Y1=(y1+Y1)/2
@@ -393,10 +403,16 @@ def compare_spots(p_boxes,v_boxes):
     print("number OF TOTAL P PLACE : ", len(p_boxes))
     return p_boxes
 
+# |--------------------------------------------------------------------|
+# |-Method that compares the two bounding boxes by calculating the IoU-|
+# |--------------------------------------------------------------------|
 def compare_boxes(BOXA,BOXB):
     return True if calculate_IoU(BOXA,BOXB)>0.9 else False
 
 
+# |-------------------------------------------------------------------|
+# |-Compares two different list to check if they are almost identical-|
+# |-------------------------------------------------------------------|
 def compare_list (listA,listB):
     lengthA = len(listA)
     lengthB = len(listB)
@@ -412,9 +428,10 @@ def compare_list (listA,listB):
 
 
 # |-------------------------------------------|
-# |-----Functions for YOLO3------|
+# |-----------Functions for YOLO3-------------|
 # |-------------------------------------------|
 
+# Method that get the result of the predictions from the classification
 def get_output_layers(net):
     
     layer_names = net.getLayerNames()
@@ -423,6 +440,7 @@ def get_output_layers(net):
 
     return output_layers
 
+#Method that classify and filter the img processing result to store only vehicles
 def yolo3_classify(image_yolo, classes, COLORS):
     Width = image_yolo.shape[1]
     Height = image_yolo.shape[0]
@@ -457,6 +475,7 @@ def yolo3_classify(image_yolo, classes, COLORS):
                 boxes.append([x, y, w, h])
     indices = cv2.dnn.NMSBoxes(boxes, confidences, classify_treshold, nms_threshold)
 
+    #Loops through the detected objects and stores only the vehicles
     for i in indices:
         
         i = i[0]
@@ -470,33 +489,16 @@ def yolo3_classify(image_yolo, classes, COLORS):
             print("CONFIDENCES", confidences[i])
     return BOX
 
-#----------------------------------------------
-# Check what mode is chosen,URL or local image-
-#----------------------------------------------
-#with open('coordinates.json', 'w') as file:
-#        data = {"parking":[]}
-#        json.dump(data, file)
 
 print("Program starts")
 
 while(True):
-
-    try:
-        x = int(input("Enter the image number from 1-105...")) #integer input
-    except ValueError:
-        x=1
-    if(x<1 or x>106):
-        print("Value out of bounds, choses img 1 instead")
-        x=1
-
-    image_yolo3 = copy(vars()["image"+str(x)])
-    #image_yolo3 = get_cam_img()
-  
+    #Capture image from the camera
+    image_yolo3 = get_cam_img()
 
     start = time.time()
     print("Loading coordinates")
     park_boxes = load_coord()
-    #print("Json coordinats in the beginning", park_boxes)
     min_distance = int (read_distance())
            
 
@@ -506,13 +508,16 @@ while(True):
     print("Classifying with Yolov3")
     vehicle_boxes = yolo3_classify(image_yolo3, classes, COLORS)
     vehicle_box_reserv = deepcopy(vehicle_boxes)
+    
+    #Perform only calculations if there are vehicles that are present on the parking lot
     if len(vehicle_boxes) > 0:
         print("Number of detected vehicle is: ", len(vehicle_boxes))
+        #Run until the classification and parking coordinates match
+        #This in order to make sure that vehicles are not being moved while predicting
         while True:
             time.sleep(interval/2)
-            #image = get_cam_img() 
+            image_yolo3 = get_cam_img()
             print("Second round classifying just to be sure")
-            # vehicle_boxes2 = yolo3_classify(image, classes, COLORS)
             vehicle_boxes2 = yolo3_classify(image_yolo3, classes, COLORS)
             if(compare_list(vehicle_boxes,vehicle_boxes2)):
                 print("We are sure that at least one vehicle is there")
@@ -521,25 +526,29 @@ while(True):
             else: 
                 print("We will classify again")
                 vehicle_boxes = vehicle_boxes2
+    
+        #Run this statement if this program was run the first time
         if len(park_boxes) == 0:
             print("This is new program put every box as a parking space")
             park_boxes = deepcopy(vehicle_boxes)
             put_boxes(park_boxes)
+                
+        #Else, there are already parking spaces defined
         else:
             print("Comparing the spots")
             print(park_boxes)
             park_boxes = compare_spots(park_boxes,vehicle_boxes)
 
-    print("Calculating free spots")
+    #Check if any free spots and if there are any new parking spots
     new_free_spaces, vehicle_boxes = calculate_free_spots(image_yolo3,park_boxes,vehicle_boxes)
     
 
 #-----------------
 # Show the images-
 #-----------------
+
     while((time.time()-start < interval) and (time.time()-start>0)):
         time.sleep(1)
-        #print(time.time()-start)
 
     image_yolo3 = cv2.resize(image_yolo3, (1000, 700))
     cv2.imshow("Parking Spaces", image_yolo3)
@@ -547,17 +556,19 @@ while(True):
     cv2.destroyAllWindows()
     cv2.imwrite("test-image.jpg",image_yolo3)
     new_list =[]
-    #print(park_boxes)
+
+    #Check whether the same vehicles are parked and no changes have been made on the parking lot
     if(free_spaces != new_free_spaces):
+       #Compose the lora message to send
        lora_message = "New-"+str(ID)+"-"+str(len(park_boxes))+"-"+str(new_free_spaces)
        print(lora_message)
-       #ser.write(lora_message.encode())
+       ser.write(lora_message.encode())
        #str1=ser.readline()
        #print(str1)
        free_spaces = new_free_spaces
-       #if(len(vehicle_box_reserv)>0):
-            #put_coord_dbScan(vehicle_box_reserv)
-            #nSamples += 1
+    #Statement that checks if there are any parked vehicles
+    #If there are vehicles parked, then compare if it is the same from the last check
+    #Increase sample count if there is a new vehicle that have parked
     if(len(vehicle_box_reserv)>0):
         for j in vehicle_box_reserv:
             for k in old_vehicle_boxes:
@@ -571,10 +582,11 @@ while(True):
     print("Number of total new detected vehicles is :", len(new_list))
     old_vehicle_boxes = deepcopy(vehicle_boxes)
     vehicle_boxes.clear()
+    #Check if we have collected enough samples for performing the clustering task
     if nSamples >= Min_Samples:
         cluster_parking()
         park_boxes = load_coord()
-        test_image =deepcopy(image100)
+        test_image = deepcopy(image100)
         for box in park_boxes:
             x1 =int(box[0])
             x2 =int(box[1])
@@ -588,6 +600,7 @@ while(True):
         cv2.imwrite("New-Boxes_Clustring.jpg",test_image)
         nSamples = 0
         dbscan_ready = True
+        # Clears the collected data for clustering
         #with open('dbScan_coordinates.json', 'w') as file:
             #data = {"vehicles":[]}
             #json.dump(data, file)
