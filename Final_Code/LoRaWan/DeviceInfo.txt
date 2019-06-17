@@ -1,0 +1,14 @@
+Device Information
+
+EUI: 0004A30B001E66D4
+Battery: 3253
+AppEUI: 0000000000000000
+DevEUI: 0004A30B001E66D4
+Data Rate: 0
+RX Delay 1: 1000
+RX Delay 2: 2000
+
+Use the EUI to register the device for OTAA
+
+
+New-001-005-009
