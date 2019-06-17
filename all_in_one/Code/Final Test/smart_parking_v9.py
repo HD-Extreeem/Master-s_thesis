@@ -36,7 +36,7 @@ free_spaces = -1
 vehicle_boxes=[]
 old_vehicle_boxes=[]
 park_boxes=[]
-Min_Samples=5
+Min_Samples=10
 classify_treshold = 0.48
 
 image1 = cv2.imread("images/1.jpg")
