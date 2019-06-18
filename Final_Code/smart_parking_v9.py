@@ -24,49 +24,38 @@ from sklearn.neighbors import kneighbors_graph
 from sklearn.preprocessing import StandardScaler
 from sklearn import metrics
 
-classes = None
-#ser = serial.Serial('/dev/badgerboard',9600,5)
+#Serial com to the badgerboard
+#Configured statically
+ser = serial.Serial('/dev/badgerboard',9600,5)
+
+#Url to the camera capture
 url_img = 'http://root:ateapass@192.168.0.90/axis-cgi/jpg/image.cgi?resolution=1920x1080'
-ID = 1
-interval = 3
-dbscan_ready=False
-min_distance = 10000
-nSamples = 0
-free_spaces = -1
-vehicle_boxes=[]
-old_vehicle_boxes=[]
-park_boxes=[]
-Min_Samples=10
+
+ID                = 1
+interval          = 60*5
+dbscan_ready      = False
+min_distance      = 10000
+nSamples          = 0
+free_spaces       = -1
+vehicle_boxes     = []
+old_vehicle_boxes = []
+park_boxes        = []
+Min_Samples       = 180
 classify_treshold = 0.48
+classes           = None
+last_time         = time.time()
 
-image1 = cv2.imread("images/1.jpg")
-image2 = cv2.imread("images/2.jpg")
-image3 = cv2.imread("images/3.jpg")
-image4 = cv2.imread("images/4.jpg")
-image5 = cv2.imread("images/5.jpg")
-image6 = cv2.imread("images/6.jpg")
-image7 = cv2.imread("images/7.jpg")
-image8 = cv2.imread("images/8.jpg")
-image9 = cv2.imread("images/9.jpg")
-image10 = cv2.imread("images/10.jpg")
-image11 = cv2.imread("images/11.jpg")
-image12 = cv2.imread("images/12.jpg")
-image13 = cv2.imread("images/13.jpg")
-image100 = cv2.imread("images/100.jpg")
-image101 = cv2.imread("images/101.jpg")
-image102 = cv2.imread("images/102.jpg")
-image103 = cv2.imread("images/103.jpg")
-image104 = cv2.imread("images/104.jpg")
-image105 = cv2.imread("images/105.jpg")
-
-
-last_time = time.time()
-
-with open("../../yolo3/yolov3.txt", 'r') as f:
+# Requires to download the yolo lable file from
+# https://pjreddie.com/darknet/yolo/
+# And place in the yolo folder from the current folder as the code
+with open("yolo3/yolov3.txt", 'r') as f:
     classes = [line.strip() for line in f.readlines()]
 
 COLORS = np.random.uniform(0, 255, size=(len(classes), 3))
 
+# |----------------------------------------------------|
+# |-Method that reads the distance from the json file -|
+# |----------------------------------------------------|
 def read_distance():
     distance = -1
     with open('distance.json', 'r') as f:
@@ -75,7 +64,9 @@ def read_distance():
         distance = element["min"]
     return distance
 
-
+# |-------------------------------------------------------------------------|
+# |-Writes the distance to the json file in order to store the min distance-|
+# |-------------------------------------------------------------------------|
 def write_distance(new_dist):
     with open('distance.json', 'w') as file:
         data = {"distance":[]}
@@ -85,7 +76,9 @@ def write_distance(new_dist):
     with open('distance.json', 'w') as file:
         json.dump(data, file)
 
-
+# |----------------------------------------------|
+# |-This method request an image from the camera-|
+# |----------------------------------------------|
 def get_cam_img():
     r = requests.get(url_img)
     print("Status code"+str(r.status_code))
@@ -95,6 +88,10 @@ def get_cam_img():
     
     return image
 
+# |-------------------------------------------------|
+# |-This method appends the coordinates            -|
+# |-and its neccessary information to the json file-|
+# |-------------------------------------------------|
 def put_coord(startX,endX,startY,endY,IoU,ID,state):
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
@@ -111,6 +108,11 @@ def put_coord(startX,endX,startY,endY,IoU,ID,state):
     with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
+# |----------------------------------------------------------------------------|
+# |-This method performs the clustering of the collected coordinates          -|
+# |-Clusters the coordinates by taking the centroid of the coordinates        -|
+# |-When the clustering is finished, the outliers are removed if thera are any-|
+# |----------------------------------------------------------------------------|
 def cluster_parking ():
     global Min_Samples
     distance = int(read_distance())
@@ -123,13 +125,13 @@ def cluster_parking ():
     
     for element in data["vehicles"]:
         slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"]])
-        dataset.append([int(np.average([element["startX"],element["endX"]])),int(np.average([element["startY"],element["endY"]]))])
+    dataset.append([int(np.average([element["startX"],element["endX"]])),int(np.average([element["startY"],element["endY"]]))])
     
-    #dataset.append([int(np.average([3173,3705])),int(np.average([1077,1465]))])
     new_array = np.array(dataset), None
     X, y = new_array
-   # dbscan = cluster.DBSCAN(eps=(distance*0.4),min_samples = (int(Min_Samples*0.4))).fit(X)
-    dbscan = cluster.DBSCAN(eps=(distance*0.4),min_samples = 2).fit(X)
+
+    # Clusters the data
+    dbscan = cluster.DBSCAN(eps=(distance*0.4),min_samples = 7).fit(X)
     labels = dbscan.labels_
     core_samples_mask = np.zeros_like(labels, dtype=bool)
     core_samples_mask[dbscan.core_sample_indices_] = True
@@ -139,6 +141,8 @@ def cluster_parking ():
     print('Estimated number of clusters: %d' % n_clusters_)
     print('Estimated number of noise points: %d' % n_noise_)
     p_boxes = [None] * n_clusters_
+
+    #Loop through the data and keep only the cluster in order to remove outliers
     for i in range(len(slot_box)):
         if labels[i] != -1:
             X1,X2,Y1,Y2 = slot_box[i]
@@ -149,6 +153,8 @@ def cluster_parking ():
             else:
                 p_boxes[labels[i]] = slot_box[i]
     new_labels = labels.tolist()
+
+    #Loop through the valid clusters and take the average of each parking spots
     for j in range(n_clusters_):
         num = new_labels.count(j)
         x1,x2,y1,y2 = p_boxes[j]
@@ -160,6 +166,8 @@ def cluster_parking ():
     unique_labels = set(labels)
     colors = [plt.cm.Spectral(each)
             for each in np.linspace(0, 1, len(unique_labels))]
+
+    #Loop thorugh the data and creates a visual plot of the clusters
     for k, col in zip(unique_labels, colors):
         if k == -1:
             # Black used for noise.
@@ -174,6 +182,10 @@ def cluster_parking ():
     plt.title('Estimated number of clusters: %d' % n_clusters_)
     plt.show() 
 
+# |-----------------------------------------------------------------------|
+# |-This method stores the valid coordinates from the clustering task    -|
+# |-The coordinates are stored in a seperate json file for the clustering-|
+# |-----------------------------------------------------------------------|
 def refresh_coord_dbScan(boxes):
     with open('dbScan_coordinates.json', 'w') as file:
         data = {"vehicles":[]}
@@ -194,7 +206,10 @@ def refresh_coord_dbScan(boxes):
     with open('dbScan_coordinates.json', 'w') as file:
         json.dump(data, file)
 
-
+# |--------------------------------------------------------------------|
+# |-Method for appending the parking spot coordinates to the json file-|
+# |-These coordinates are used for the clustering task -|
+# |--------------------------------------------------------------------|
 def put_coord_dbScan(boxes):
     global min_distance
     global nSamples
@@ -227,6 +242,9 @@ def put_coord_dbScan(boxes):
     with open('dbScan_coordinates.json', 'w') as file:
         json.dump(data, file)
 
+# |--------------------------------------------------------------------|
+# |-Method for appending the parking spot coordinates to the json file-|
+# |--------------------------------------------------------------------|
 def put_boxes (boxes):
     boxes_new = calculate_park_IoU(boxes)
     boxes_new = sort_parking_id(boxes_new)
@@ -240,7 +258,10 @@ def put_boxes (boxes):
         put_coord( i[0], i[1], i[2], i[3], i[4], i[5], i[6])
 
 
-
+# |----------------------------------------------------|
+# |-Method for sorting the parking spots in order     -|
+# |-The parking spots are ordered by their coordinates-|
+# |----------------------------------------------------|
 def sort_parking_id(boxes):
     sorted_boxes = sorted(boxes,key=lambda x : (x[0],x[2]))
     num = 1
@@ -253,6 +274,9 @@ def sort_parking_id(boxes):
         num+=1
     return sorted_boxes
 
+# |-----------------------------------------------------------------------------------|
+# |--Method that reads the stored coordinate from the json file-----------------------|
+# |-----------------------------------------------------------------------------------|
 def load_coord():
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
@@ -261,6 +285,9 @@ def load_coord():
         slot_box.append([element["startX"],element["endX"],element["startY"],element["endY"],element["IoU"],element["ID"],element["State"]])
     return slot_box
 
+# |---------------------------------------------------------------------------------------------|
+# |- Method replaces the stored coordinates with the new average value that has been caluclated-|
+# |---------------------------------------------------------------------------------------------|
 def replace_coord(old_startX,old_startY,startX,endX,startY,endY):
     with open('coordinates.json', 'r') as f:
         data = json.load(f)
@@ -274,6 +301,10 @@ def replace_coord(old_startX,old_startY,startX,endX,startY,endY):
     with open('coordinates.json', 'w') as file:
         json.dump(data, file)
 
+# |-----------------------------------------------------------------------------------|
+# |- Method that calculates the intersection of two different lists of bounding boxes-|
+# |- Returns the intersection value of both boxes                                    -|
+# |-----------------------------------------------------------------------------------|
 def calculate_IoU(boxA,boxB):
     XA= max(boxA[0],boxB[0])
     XB= min(boxA[1],boxB[1])
@@ -292,6 +323,10 @@ def calculate_IoU(boxA,boxB):
     
     return iou
 
+# |-----------------------------------------------------------------------|
+# |- Method calculates the IoU value of the vehicle with the bounding box-|
+# |- Also appends the maximum intersection with vehicles that are close  -|
+# |-----------------------------------------------------------------------|
 def calculate_park_IoU(places):
     for i in places:
         IoU_max=0
@@ -305,11 +340,17 @@ def calculate_park_IoU(places):
             i[4]=IoU_max
     return places
 
+# |-------------------------------------------------------------------|
+# |- Method that checks which spots are busy/free on the parking lot -|
+# |- Also checks if there are vehicles that are parked unlawfully    -|
+# |-------------------------------------------------------------------|
 def calculate_free_spots(image,p_boxes,v_boxes):
     free_space=0
     global dbscan_ready
     global last_time
-    unlawful = [0] * len(v_boxes) 
+    
+    # Loop through all the stored parking bounding boxes and detected vehicle bounding boxes
+    # And Check if they parking spots are busy or free
     for slot in p_boxes:
         IoU_max = 0
         for vehicle in v_boxes:
@@ -322,24 +363,29 @@ def calculate_free_spots(image,p_boxes,v_boxes):
         y2 =int(slot[3])
         Id = slot[5]
         State = ""
-        #print("P place coordinates are :",slot)
+
         print("Maximum IoU is: ",IoU_max)
-        #print("Parking space IoU is: ",slot[4])
-        
+
+        # If the IoU of the parking spot is smaller than the threshold, then we draw a green box
         if IoU_max < slot[4]+0.10:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),10)
            free_space += 1
            slot[6] = "Free"
-        
+               
+        # else if it is greater than the threshold
+        # then we draw a red box to indicate the parking spot as busy
         elif IoU_max > slot[4]+0.50:
            cv2.rectangle(image,(x1,y1),(x2,y2),(0,0,255),10)
            slot[6] = "Busy"
+
+        # Else it might be that the vehicle is parked unlawfully
         else:
             cv2.rectangle(image,(x1,y1),(x2,y2),(0,0,255),10)
 
-
         cv2.putText(image, str(Id), (x1+10,y1-10), cv2.FONT_HERSHEY_SIMPLEX, 3, (0,255,0), 4)
 
+    # Checks only when the clustering is made
+    # Checks if any vehicle is parked unlawfully
     if dbscan_ready:
         for vehicle in v_boxes:
             x1 =int(vehicle[0])
@@ -445,13 +491,19 @@ def yolo3_classify(image_yolo, classes, COLORS):
     Width = image_yolo.shape[1]
     Height = image_yolo.shape[0]
     scale = 0.00392
-    net = cv2.dnn.readNet("../../yolo3/yolov3.cfg", "../../yolo3/yolov3.weights")
+    
+    # Requires to download the yolo config and weight file from
+    # https://pjreddie.com/darknet/yolo/
+    # And place in the yolo folder from the current folder as the code
+    net = cv2.dnn.readNet("yolo3/yolov3.cfg", "yolo3/yolov3.weights")
+    
     blob = cv2.dnn.blobFromImage(image_yolo, scale, (416,416), (0,0,0), True, crop=False)
     net.setInput(blob)
     start = time.time()
     outs = net.forward(get_output_layers(net))
     end = time.time()
     print("[INFO] YOLO3 took {:.6f} seconds".format(end - start))
+    
     class_ids = []
     confidences = []
     boxes = []
@@ -477,7 +529,6 @@ def yolo3_classify(image_yolo, classes, COLORS):
 
     #Loops through the detected objects and stores only the vehicles
     for i in indices:
-        
         i = i[0]
         if(str(classes[class_ids[i]]) == "car" or str(classes[class_ids[i]]) == "truck" or str(classes[class_ids[i]]) == "motorcycle" or str(classes[class_ids[i]]) == "bus"):
             box = boxes[i]
@@ -489,9 +540,6 @@ def yolo3_classify(image_yolo, classes, COLORS):
             print("CONFIDENCES", confidences[i])
     return BOX
 
-
-print("Program starts")
-
 while(True):
     #Capture image from the camera
     image_yolo3 = get_cam_img()
@@ -500,8 +548,7 @@ while(True):
     print("Loading coordinates")
     park_boxes = load_coord()
     min_distance = int (read_distance())
-           
-
+    
 #-------------------------------------
 # Methods for classifying the objects-
 #-------------------------------------
@@ -600,10 +647,12 @@ while(True):
         cv2.imwrite("New-Boxes_Clustring.jpg",test_image)
         nSamples = 0
         dbscan_ready = True
+
         # Clears the collected data for clustering
         #with open('dbScan_coordinates.json', 'w') as file:
             #data = {"vehicles":[]}
             #json.dump(data, file)
+
     vehicle_boxes.clear()
     park_boxes.clear()
     print("Number of samples is : ", nSamples)
