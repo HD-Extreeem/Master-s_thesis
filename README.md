@@ -1,2 +1,5 @@
-# Master_thesis
-Vacant parking detection
+# Computer Science: Master Thesis
+## A Self-policing Smart Parking Solution
+### Authors: Yurdaer Dalkic & Hadi Deknache
+
+
